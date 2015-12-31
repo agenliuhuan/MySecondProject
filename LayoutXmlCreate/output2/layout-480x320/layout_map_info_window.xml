@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@color/transparent" android:orientation="horizontal">  
+  <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/map_infowindow_bg"> 
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal"> 
+      <Button android:id="@+id/btn_info_window_refresh" android:layout_width="21px" android:layout_height="21px" android:layout_gravity="center_vertical" android:background="@drawable/mapinfo_refresh_selector"/>  
+      <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3px" android:minWidth="106px" android:orientation="vertical"> 
+        <TextView android:id="@+id/tv_info_window_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:maxWidth="186px" android:textColor="#6f6f6f" android:textSize="13sp"/>  
+        <TextView android:id="@+id/tv_info_window_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1px" android:singleLine="true" android:textColor="#888888" android:textSize="11sp"/> 
+      </LinearLayout>  
+      <Button android:id="@+id/btn_info_window_shareOrdetail" android:layout_width="21px" android:layout_height="21px" android:layout_gravity="center_vertical" android:background="@drawable/mapinfo_share_selector"/> 
+    </LinearLayout> 
+  </RelativeLayout> 
+</LinearLayout>

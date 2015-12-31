@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar_escort"
+        layout="@layout/comm_title_bar" />
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar_escort" />
+
+    <LinearLayout
+        android:id="@+id/escort_infoRL"
+        android:layout_width="match_parent"
+        android:layout_height="168px"
+        android:layout_below="@+id/titlebar_escort"
+        android:background="#e5ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="122px"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/escort_info_goal" />
+
+                <TextView
+                    android:id="@+id/escort_info_locationTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="24px"
+                    android:text="@string/set_dest_address"
+                    android:textColor="#326eff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginTop="10px"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@drawable/escort_info_begin" />
+
+                <TextView
+                    android:id="@+id/escort_info_arriveTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="24px"
+                    android:text="@string/activity_escort_wu"
+                    android:textColor="#6f6f6f"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="@color/comm_line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42px"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_escort_pass"
+                    android:textColor="#6f6f6f"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/escort_info_passTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_escort_wu"
+                    android:textColor="#6f6f6f"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5px"
+                android:layout_marginTop="5px"
+                android:background="@color/comm_line_color" />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/escort_info_powerTipTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_escort_power"
+                    android:textColor="#6f6f6f"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/escort_info_powerTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_escort_wu"
+                    android:textColor="#6f6f6f"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/comm_line_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/escort_bottomRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+        
+        <cn.changl.safe360.android.ui.comm.HorizontalListView 
+            android:id="@+id/escort_horizontallistview"
+            android:layout_width="match_parent"
+            android:layout_height="124px"
+            android:listSelector="@color/transparent"/>
+
+       <!--  <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="116px"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/escort_familiesGridLL"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <GridView
+                    android:id="@+id/escort_familiesGrid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@color/transparent" >
+                </GridView>
+            </LinearLayout>
+        </HorizontalScrollView> -->
+
+        <RelativeLayout
+            android:id="@+id/escort_ChatRL"
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:background="@drawable/activity_bottombg" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/escort_ChatLL"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="56px"
+                        android:layout_height="56px"
+                        android:background="@drawable/escort_chat_selector" />
+
+                    <TextView
+                        android:id="@+id/txt_escort_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24px"
+                        android:text="@string/mainfragment_chatTV"
+                        android:textColor="@drawable/escort_bottomtext_selector"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txt_escort_msg_count"
+                        android:layout_width="37px"
+                        android:layout_height="37px"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/icon_menu_red_point"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="11sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5px"
+                    android:layout_marginTop="5px"
+                    android:background="@color/comm_line_color" />
+
+                <LinearLayout
+                    android:id="@+id/exitOrFinishTripLL"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="56px"
+                        android:layout_height="56px"
+                        android:background="@drawable/escort_finish_selector" />
+
+                    <TextView
+                        android:id="@+id/txt_escort_exit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24px"
+                        android:text="@string/activity_escorted_righttext"
+                        android:textColor="@drawable/escort_bottomtext_selector"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/escort_myLocationBtn"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="224px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/main_myaddress_selector" />
+
+</RelativeLayout>

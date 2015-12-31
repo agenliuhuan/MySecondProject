@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@color/comm_activity_background">  
+  <include android:id="@+id/setting_title" layout="@layout/comm_title_bar"/>  
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/setting_title" android:orientation="vertical"> 
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="122px" android:layout_marginTop="24px" android:background="@color/white"> 
+      <LinearLayout android:layout_width="466px" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="54px" android:orientation="vertical"> 
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fragment_setting_tv_hide_title" android:textColor="#333333" android:textSize="15sp"/>  
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12px" android:text="@string/fragment_setting_tv_hide_content" android:textColor="#888888" android:textSize="12sp"/> 
+      </LinearLayout>  
+      <CheckBox android:id="@+id/checkbox_setting_hide" android:layout_width="112px" android:layout_height="68px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="36px" android:button="@drawable/hide_check_selector"/> 
+    </RelativeLayout>  
+    <RelativeLayout android:id="@+id/layout_setting_offlinemapRL" android:layout_width="match_parent" android:layout_height="92px" android:layout_gravity="center_horizontal" android:layout_marginTop="24px" android:background="@drawable/on_item_selected"> 
+      <ImageView android:id="@+id/img_setting_offlinemap" android:layout_width="40px" android:layout_height="40px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="24px" android:src="@drawable/account_next_img"/>  
+      <TextView android:id="@+id/tv_setting_offlinemap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginLeft="54px" android:text="@string/fragment_setting_tv_offlinemap" android:textColor="#6f6f6f" android:textSize="15sp"/> 
+    </RelativeLayout>  
+    <View android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24px" android:layout_marginRight="24px" android:background="@color/comm_line_color"/>  
+    <RelativeLayout android:id="@+id/layout_setting_guide" android:layout_width="match_parent" android:layout_height="92px" android:layout_gravity="center_horizontal" android:background="@drawable/on_item_selected"> 
+      <ImageView android:id="@+id/img_setting_guide" android:layout_width="40px" android:layout_height="40px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="24px" android:src="@drawable/account_next_img"/>  
+      <TextView android:id="@+id/tv_setting_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginLeft="54px" android:text="@string/fragment_setting_tv_guide" android:textColor="#6f6f6f" android:textSize="15sp"/> 
+    </RelativeLayout>  
+    <View android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24px" android:layout_marginRight="24px" android:background="@color/comm_line_color"/>  
+    <RelativeLayout android:id="@+id/layout_setting_compro" android:layout_width="match_parent" android:layout_height="92px" android:background="@drawable/on_item_selected"> 
+      <ImageView android:id="@+id/img_setting_compro" android:layout_width="40px" android:layout_height="40px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="24px" android:src="@drawable/account_next_img"/>  
+      <TextView android:id="@+id/tv_setting_compro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginLeft="54px" android:text="@string/activity_helper_common" android:textColor="#6f6f6f" android:textSize="15sp"/> 
+    </RelativeLayout>  
+    <View android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24px" android:layout_marginRight="24px" android:background="@color/comm_line_color"/>  
+    <RelativeLayout android:id="@+id/layout_setting_update" android:layout_width="match_parent" android:layout_height="92px" android:background="@drawable/on_item_selected"> 
+      <ImageView android:id="@+id/img_setting_update" android:layout_width="40px" android:layout_height="40px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="24px" android:src="@drawable/account_next_img"/>  
+      <TextView android:id="@+id/tv_setting_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginLeft="54px" android:text="@string/fragment_setting_tv_update" android:textColor="#6f6f6f" android:textSize="15sp"/>  
+      <TextView android:id="@+id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginRight="6px" android:layout_toLeftOf="@+id/img_setting_update" android:textColor="#888888" android:textSize="12sp"/>  
+      <ImageView android:id="@+id/img_version" android:layout_width="66px" android:layout_height="30px" android:layout_centerVertical="true" android:layout_toRightOf="@+id/tv_setting_update" android:src="@drawable/img_new"/> 
+    </RelativeLayout>  
+    <View android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24px" android:layout_marginRight="24px" android:background="@color/comm_line_color"/>  
+    <RelativeLayout android:id="@+id/layout_setting_share" android:layout_width="match_parent" android:layout_height="92px" android:background="@drawable/on_item_selected"> 
+      <ImageView android:layout_width="40px" android:layout_height="40px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="24px" android:src="@drawable/account_next_img"/>  
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginLeft="54px" android:text="@string/fragment_setting_tv_share" android:textColor="#6f6f6f" android:textSize="15sp"/> 
+    </RelativeLayout>  
+    <Button android:id="@+id/layout_setting_exitfamilyBtn" android:layout_width="match_parent" android:layout_height="88px" android:layout_marginLeft="54px" android:layout_marginRight="54px" android:layout_marginTop="64px" android:background="@drawable/btn_red_selector" android:text="@string/fragment_setting_btn_exit" android:textColor="@color/white" android:textSize="20sp" android:visibility="gone"/> 
+  </LinearLayout>  
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginBottom="12px" android:orientation="vertical"> 
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="horizontal"> 
+      <TextView android:id="@+id/layout_setting_copyrights" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fragment_setting_copyright1" android:textColor="#ff6b5c" android:textSize="15sp"/> 
+    </LinearLayout>  
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10px" android:gravity="center_horizontal" android:orientation="vertical"> 
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:text="@string/fragment_setting_copyright4" android:textColor="#b5b5b5" android:textSize="10sp"/>  
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:text="@string/fragment_setting_copyright2" android:textColor="#b5b5b5" android:textSize="10sp"/>  
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:text="@string/fragment_setting_copyright3" android:textColor="#b5b5b5" android:textSize="10sp"/> 
+    </LinearLayout> 
+  </LinearLayout>  
+  <RelativeLayout android:id="@+id/setting_shareRL" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#cc000000" android:visibility="gone"> 
+    <LinearLayout android:id="@+id/setting_shareLL" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:background="@color/white" android:orientation="vertical"> 
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/comm_activity_background" android:orientation="vertical"> 
+        <TextView android:id="@+id/setting_shareTv1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20px" android:gravity="center" android:text="@string/fragment_setting_sharetip" android:textColor="#333333" android:textSize="19sp"/>  
+        <TextView android:id="@+id/setting_shareTv2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20px" android:gravity="center" android:text="@string/fragment_setting_sharetip1" android:textColor="#fe5b49" android:textSize="15sp"/>  
+        <TextView android:id="@+id/setting_shareTv3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10px" android:layout_marginTop="30px" android:gravity="center" android:text="@string/fragment_setting_sharetip2" android:textColor="#888888" android:textSize="11sp"/> 
+      </LinearLayout>  
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40px" android:orientation="horizontal"> 
+        <Button android:id="@+id/shareWchatBtn" android:layout_width="110px" android:layout_height="110px" android:layout_marginLeft="62px" android:background="@drawable/btn_sharewchat_selector"/>  
+        <Button android:id="@+id/shareCircleBtn" android:layout_width="110px" android:layout_height="110px" android:layout_marginLeft="52px" android:background="@drawable/btn_sharecircle_selector"/>  
+        <Button android:id="@+id/shareQQBtn" android:layout_width="110px" android:layout_height="110px" android:layout_marginLeft="52px" android:background="@drawable/btn_shareqq_selector"/>  
+        <Button android:id="@+id/shareMsgBtn" android:layout_width="110px" android:layout_height="110px" android:layout_marginLeft="52px" android:background="@drawable/btn_sharemessage_selector"/> 
+      </LinearLayout>  
+      <Button android:id="@+id/btn_share_cancel" android:layout_width="match_parent" android:layout_height="82px" android:layout_gravity="center_horizontal" android:layout_marginBottom="32px" android:layout_marginLeft="54px" android:layout_marginRight="54px" android:layout_marginTop="40px" android:background="@drawable/btn_red_selector" android:gravity="center" android:text="@string/main_sharemylocation_cancel" android:textColor="@color/white" android:textSize="@dimen/font_size_18"/> 
+    </LinearLayout> 
+  </RelativeLayout> 
+</RelativeLayout>

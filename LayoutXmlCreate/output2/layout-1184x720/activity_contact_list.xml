@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/comm_activity_background">  
+  <include android:id="@+id/layout_title" layout="@layout/comm_title_bar"/>  
+  <RelativeLayout android:id="@+id/layout_search_bar" android:layout_width="match_parent" android:layout_height="120px" android:layout_below="@+id/layout_title"> 
+    <EditText android:id="@+id/edt_contacts_search" android:layout_width="636px" android:layout_height="72px" android:layout_centerVertical="true" android:layout_margin="20px" android:layout_toLeftOf="@+id/addfamily_clear_tv" android:background="@drawable/edt_general_withe" android:drawableLeft="@drawable/addfamily_edit_serch" android:drawablePadding="10px" android:gravity="center_vertical" android:hint="@string/activity_addfamily_edit_tip" android:paddingLeft="10px" android:singleLine="true" android:textSize="16sp"></EditText>  
+    <Button android:id="@+id/addfamily_clearBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginRight="40px" android:layout_toLeftOf="@+id/addfamily_clear_tv" android:background="@drawable/addfamily_clear_selector" android:visibility="gone"/>  
+    <TextView android:id="@+id/addfamily_clear_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="20px" android:clickable="true" android:text="@string/activity_addfamily_clear_text" android:textColor="@color/listitem_name_text_color" android:textSize="@dimen/font_size_15" android:visibility="gone"/> 
+  </RelativeLayout>  
+  <RelativeLayout android:id="@+id/contact_nullRL" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_below="@id/layout_search_bar"> 
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:gravity="center" android:orientation="vertical"> 
+      <ImageView android:layout_width="258px" android:layout_height="360px" android:src="@drawable/contact_nullimage"/>  
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_nocontact" android:textColor="#888888" android:textSize="15sp" android:gravity="center"/> 
+    </LinearLayout> 
+  </RelativeLayout>  
+  <cn.changl.safe360.android.ui.smslocation.CustomContactsListView android:id="@+id/list_contacts" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_below="@id/layout_search_bar" android:background="@color/comm_activity_background" android:cacheColorHint="@android:color/transparent" android:divider="@color/comm_line_color" android:dividerHeight="1px" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:listSelector="@color/transparent" android:scrollbars="none" android:visibility="invisible"/> 
+</RelativeLayout>

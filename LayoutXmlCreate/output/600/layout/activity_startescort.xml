@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">  
+  <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/white" android:orientation="vertical"> 
+    <include android:id="@+id/titlebar_startescort" layout="@layout/comm_title_bar"/>  
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="475px"> 
+      <FrameLayout android:id="@+id/startescort_map" android:layout_width="match_parent" android:layout_height="match_parent"/> 
+    </RelativeLayout>  
+    <TextView android:layout_width="match_parent" android:layout_height="1px" android:background="#D1D1D1"/>  
+    <LinearLayout android:layout_width="match_parent" android:layout_height="48px" android:background="#fe9a0b" android:gravity="center_vertical"> 
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="26px" android:layout_marginRight="26px" android:text="@string/activity_startescort_sendtiptext" android:textColor="#ffffff" android:textSize="12sp"/> 
+    </LinearLayout>  
+    <GridView android:id="@+id/startescort_familiesGrid" android:layout_width="fill_parent" android:layout_height="187px" android:layout_marginLeft="26px" android:layout_marginRight="26px" android:layout_marginTop="21px" android:listSelector="@color/transparent" android:numColumns="5" android:scrollbars="none" android:verticalSpacing="10px"></GridView>  
+    <LinearLayout android:layout_width="503px" android:layout_height="0px" android:layout_gravity="center_horizontal" android:layout_weight="1" android:gravity="center_vertical"> 
+      <Button android:id="@+id/startescort_startBtn" android:layout_width="503px" android:layout_height="68px" android:background="@drawable/btn_blue_selector" android:gravity="center" android:text="@string/activity_startescort_sendBtntext" android:textColor="@color/white" android:textSize="20sp"/> 
+    </LinearLayout> 
+  </LinearLayout>  
+  <RelativeLayout android:id="@+id/startescort_guide" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#cc000000" android:visibility="gone"> 
+    <ImageView android:layout_width="110px" android:layout_height="110px" android:layout_marginLeft="20px" android:layout_marginTop="615px" android:background="@drawable/startguide_allbtn"/>  
+    <ImageView android:layout_width="110px" android:layout_height="110px" android:layout_marginLeft="130px" android:layout_marginTop="615px" android:background="@drawable/startguide_onebtn"/>  
+    <ImageView android:layout_width="403px" android:layout_height="298px" android:layout_marginLeft="81px" android:layout_marginTop="316px" android:background="@drawable/startguide_text"/>  
+    <Button android:id="@+id/startescort_guide_knowBtn" android:layout_width="186px" android:layout_height="57px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="81px" android:background="@drawable/btn_guide_selector"/> 
+  </RelativeLayout> 
+</RelativeLayout>

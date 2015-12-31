@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/bottomImg"
+            android:layout_width="720px"
+            android:layout_height="521px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/splash_logo" />
+
+        <TextView
+            android:id="@+id/txt_copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="64px"
+            android:text="@string/copyright"
+            android:textColor="#dc6e67"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/img_for_qq"
+            android:layout_width="477px"
+            android:layout_height="72px"
+            android:layout_above="@+id/txt_copyright"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80px"
+            android:background="@drawable/splash_for_qq" />
+
+        <ImageView
+            android:id="@+id/img_app_name"
+            android:layout_width="391px"
+            android:layout_height="222px"
+            android:layout_above="@+id/img_for_qq"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40px"
+            android:background="@drawable/splash_app_name" />
+
+        <ImageView
+            android:id="@+id/img_slogon"
+            android:layout_width="342px"
+            android:layout_height="333px"
+            android:layout_above="@+id/img_app_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24px"
+            android:background="@drawable/splash_slogon" />
+    </RelativeLayout>
+
+</RelativeLayout>

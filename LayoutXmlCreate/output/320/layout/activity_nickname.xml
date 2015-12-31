@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@color/comm_activity_background" android:orientation="vertical">  
+  <include android:id="@+id/titlebar_nickname" layout="@layout/comm_title_bar"/>  
+  <EditText android:id="@+id/edt_nickname_new" android:layout_width="268px" android:layout_height="36px" android:layout_gravity="center_horizontal" android:layout_marginTop="26px" android:background="@drawable/edt_general_normal" android:hint="@string/activity_nickname_edithint_text" android:paddingLeft="8px" android:singleLine="true" android:textColor="#333333" android:textColorHint="#bab9b9" android:textSize="15sp"/> 
+</LinearLayout>

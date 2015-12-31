@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">  
+  <RelativeLayout android:layout_width="50px" android:layout_height="54px" android:background="@drawable/mappeoplebg"> 
+    <ImageView android:id="@+id/people_window_img" android:layout_width="40px" android:layout_height="40px" android:src="@drawable/listitem_default_img" android:layout_centerHorizontal="true" android:layout_marginTop="2px"/> 
+  </RelativeLayout> 
+</LinearLayout>

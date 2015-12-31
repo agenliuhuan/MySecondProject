@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#ffffff" android:orientation="vertical">  
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"> 
+    <include layout="@layout/comm_title_bar"/>  
+    <GridView android:id="@+id/group_detail_grid" android:layout_width="wrap_content" android:layout_height="355px" android:layout_centerInParent="true" android:layout_margin="55px" android:gravity="center" android:horizontalSpacing="13px" android:listSelector="@color/transparent" android:numColumns="auto_fit" android:scrollbars="none" android:verticalSpacing="13px"/>  
+    <View android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="26px" android:layout_marginRight="26px" android:background="@color/comm_line_color"/>  
+    <RelativeLayout android:id="@+id/group_detail_nameRL" android:layout_width="match_parent" android:layout_height="142px"> 
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="60px" android:text="@string/activity_groupdetail_name" android:textColor="#6f6f6f" android:textSize="15sp"/>  
+      <TextView android:id="@+id/group_detail_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="42px" android:textColor="#bfbfbf" android:textSize="15sp"/> 
+    </RelativeLayout>  
+    <View android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="26px" android:layout_marginRight="26px" android:background="@color/comm_line_color"/>  
+    <Button android:id="@+id/group_detail_exitBtn" android:layout_width="match_parent" android:layout_height="91px" android:layout_gravity="center_horizontal" android:layout_marginLeft="60px" android:layout_marginRight="60px" android:layout_marginTop="297px" android:background="@drawable/btn_red_selector" android:gravity="center" android:text="@string/activity_groupdetail_eixt" android:textColor="@color/white" android:textSize="@dimen/font_size_18"/> 
+  </LinearLayout> 
+</RelativeLayout>

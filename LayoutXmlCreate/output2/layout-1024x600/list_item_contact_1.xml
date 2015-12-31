@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:orientation="vertical" tools:ignore="HardcodedText,NestedWeights">  
+  <TextView android:id="@+id/sectionTextView" android:layout_width="match_parent" android:layout_height="48px" android:background="#e2e2e2" android:gravity="center_vertical" android:paddingLeft="56px" android:textColor="#595959" android:textSize="16sp" android:textStyle="bold" android:visibility="gone"/>  
+  <RelativeLayout android:id="@+id/layout_item_contact" android:layout_width="match_parent" android:layout_height="100px" android:layout_marginLeft="20px" android:layout_marginRight="20px"> 
+    <Button android:id="@+id/btn_item_addinvite" android:layout_width="81px" android:layout_height="43px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="20px" android:gravity="center" android:text=" " android:textColor="@color/white" android:textSize="@dimen/font_size_12"/>  
+    <LinearLayout android:id="@+id/sendok_LL_item_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="20px" android:orientation="horizontal" android:visibility="gone"> 
+      <TextView android:id="@+id/sendok_tv_item_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:gravity="center" android:textColor="@color/comm_black" android:textSize="@dimen/font_size_14"/> 
+    </LinearLayout>  
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toLeftOf="@id/btn_item_addinvite" android:orientation="vertical"> 
+      <TextView android:id="@+id/tv_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:textColor="@color/comm_black" android:textSize="@dimen/font_size_17"/>  
+      <LinearLayout android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:visibility="gone"> 
+        <ImageView android:id="@+id/img_item_status" android:layout_width="25px" android:layout_height="25px" android:layout_gravity="center_vertical" android:visibility="gone"/>  
+        <TextView android:id="@+id/tv_item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text=" " android:textColor="@color/comm_black_gray" android:textSize="@dimen/font_size_12"/> 
+      </LinearLayout> 
+    </LinearLayout> 
+  </RelativeLayout> 
+</LinearLayout>

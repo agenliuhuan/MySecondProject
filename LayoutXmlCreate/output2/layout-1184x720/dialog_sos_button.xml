@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">  
+  <LinearLayout android:layout_width="480px" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="@drawable/dialog_bg" android:orientation="vertical"> 
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="29px" android:orientation="horizontal"> 
+      <ImageView android:layout_width="268px" android:layout_height="218px" android:background="@drawable/dialog_sos_top"/> 
+    </LinearLayout>  
+    <TextView android:id="@+id/txt_dialog_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32px" android:layout_marginRight="32px" android:layout_marginTop="48px" android:gravity="center" android:lineSpacingExtra="5px" android:minHeight="80px" android:text="@string/dialog_title_tip" android:textColor="@color/dialog_content_color" android:textSize="16sp"/>  
+    <View android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="36px" android:background="#ff6b5c"/>  
+    <LinearLayout android:layout_width="match_parent" android:layout_height="76px" android:orientation="horizontal"> 
+      <Button android:id="@+id/btn_dialog_cancel" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1" android:background="@drawable/btn_dialog_left_bg_selector" android:gravity="center" android:text="@string/dialog_sos_no" android:textColor="@drawable/btn_dialog_textcolor" android:textSize="17sp"/>  
+      <View android:layout_width="1px" android:layout_height="match_parent" android:background="#ff6b5c"/>  
+      <Button android:id="@+id/btn_dialog_confirm" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1" android:background="@drawable/btn_dialog_right_bg_selector" android:gravity="center" android:text="@string/dialog_sos_yes" android:textColor="@drawable/btn_dialog_textcolor" android:textSize="17sp"/> 
+    </LinearLayout> 
+  </LinearLayout> 
+</LinearLayout>

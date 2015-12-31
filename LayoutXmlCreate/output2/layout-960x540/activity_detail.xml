@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#ffffff" android:orientation="vertical">  
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"> 
+    <RelativeLayout android:id="@+id/layout_detail_image" android:layout_width="match_parent" android:layout_height="339px"> 
+      <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"> 
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/leftmenutopbg"/>  
+        <ImageView android:id="@+id/layout_detail_bgimg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/> 
+      </FrameLayout>  
+      <include layout="@layout/comm_title_bar"/>  
+      <RelativeLayout android:id="@+id/img_detail_imageRL" android:layout_width="186px" android:layout_height="186px" android:layout_centerInParent="true" android:background="@drawable/head_bg"> 
+        <ImageView android:id="@+id/img_detail_image" android:layout_width="150px" android:layout_height="150px" android:layout_centerInParent="true" android:src="@drawable/user_default_image"/> 
+      </RelativeLayout> 
+    </RelativeLayout>  
+    <RelativeLayout android:id="@+id/layout_detail_phone" android:layout_width="match_parent" android:layout_height="96px"> 
+      <TextView android:id="@+id/detail_phoneTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="40px" android:text="@string/activity_account_tv_phone" android:textColor="#6f6f6f" android:textSize="15sp"/>  
+      <TextView android:id="@+id/tv_detail_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="28px" android:textColor="#6f6f6f" android:textSize="15sp"/> 
+    </RelativeLayout>  
+    <View android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="18px" android:layout_marginRight="18px" android:background="@color/comm_line_color"/>  
+    <RelativeLayout android:id="@+id/layout_detail_nickname" android:layout_width="match_parent" android:layout_height="96px" android:background="@drawable/on_item_selected"> 
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginLeft="40px" android:text="@string/activity_account_tv_nickname" android:textColor="#6f6f6f" android:textSize="15sp"/>  
+      <TextView android:id="@+id/tv_detail_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="28px" android:textColor="#6f6f6f" android:textSize="15sp"/> 
+    </RelativeLayout>  
+    <View android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="18px" android:layout_marginRight="18px" android:background="@color/comm_line_color"/>  
+    <RelativeLayout android:id="@+id/layout_detail_sex" android:layout_width="match_parent" android:layout_height="96px" android:background="@drawable/on_item_selected"> 
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginLeft="40px" android:text="@string/activity_account_tv_sex" android:textColor="#6f6f6f" android:textSize="15sp"/>  
+      <TextView android:id="@+id/tv_detail_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="28px" android:textColor="#6f6f6f" android:textSize="15sp"/> 
+    </RelativeLayout>  
+    <View android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="18px" android:layout_marginRight="18px" android:background="@color/comm_line_color"/> 
+  </LinearLayout> 
+</RelativeLayout>

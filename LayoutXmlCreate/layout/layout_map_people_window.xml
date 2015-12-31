@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="114px"
+        android:layout_height="122px"
+        android:background="@drawable/mappeoplebg" >
+
+        <ImageView
+            android:id="@+id/people_window_img"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:src="@drawable/listitem_default_img" 
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5px"/>
+    </RelativeLayout>
+
+</LinearLayout>

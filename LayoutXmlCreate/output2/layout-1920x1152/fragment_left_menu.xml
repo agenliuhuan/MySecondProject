@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="fill_parent" android:background="#ffffff">  
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"> 
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="723px"> 
+      <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"> 
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/leftmenutopbg"/>  
+        <ImageView android:id="@+id/main_menu_bgimg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/> 
+      </FrameLayout>  
+      <RelativeLayout android:id="@+id/main_menu_user" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"> 
+        <FrameLayout android:id="@+id/main_menu_user_img_fl" android:layout_width="396px" android:layout_height="396px" android:layout_centerInParent="true" android:background="@drawable/head_bg" android:foreground="@drawable/headimg_foreground_selector"> 
+          <ImageView android:id="@+id/main_menu_user_img" android:layout_width="320px" android:layout_height="320px" android:layout_gravity="center" android:src="@drawable/user_default_image"/>  
+          <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"> 
+            <ImageView android:layout_width="76px" android:layout_height="76px" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_marginBottom="38px" android:layout_marginRight="38px" android:background="@drawable/leftmenu_editimg"/> 
+          </RelativeLayout> 
+        </FrameLayout> 
+      </RelativeLayout>  
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="38px" android:orientation="vertical"> 
+        <TextView android:id="@+id/main_menu_user_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="" android:textColor="#ffffff" android:textSize="15sp"/> 
+      </LinearLayout> 
+    </RelativeLayout>  
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"> 
+      <RelativeLayout android:id="@+id/main_menu_message" android:layout_width="match_parent" android:layout_height="176px" android:background="@drawable/on_item_selected"> 
+        <ImageView android:id="@+id/main_menu_message_img" android:layout_width="80px" android:layout_height="80px" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginLeft="73px" android:src="@drawable/icon_menu_msg"/>  
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="64px" android:layout_toRightOf="@id/main_menu_message_img" android:gravity="center" android:text="@string/sliding_menu_message" android:textColor="#7e6866" android:textSize="14sp"/>  
+        <ImageView android:layout_width="48px" android:layout_height="48px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="73px" android:src="@drawable/icon_leftmenu_go"/> 
+      </RelativeLayout>  
+      <View android:id="@+id/message_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@id/main_menu_message" android:layout_marginLeft="38px" android:layout_marginRight="38px" android:background="@color/comm_line_color"/>  
+      <RelativeLayout android:id="@+id/main_menu_shake" android:layout_width="match_parent" android:layout_height="176px" android:layout_below="@id/message_line" android:background="@drawable/on_item_selected"> 
+        <ImageView android:id="@+id/main_menu_shake_img" android:layout_width="80px" android:layout_height="80px" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginLeft="73px" android:src="@drawable/icon_menu_shake"/>  
+        <TextView android:id="@+id/main_menu_shake_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="64px" android:layout_toRightOf="@id/main_menu_shake_img" android:gravity="center" android:text="@string/sliding_menu_shake" android:textColor="#7e6866" android:textSize="14sp"/>  
+        <ImageView android:layout_width="48px" android:layout_height="48px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="73px" android:src="@drawable/icon_leftmenu_go"/> 
+      </RelativeLayout>  
+      <View android:id="@+id/shake_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@id/main_menu_shake" android:layout_marginLeft="38px" android:layout_marginRight="38px" android:background="@color/comm_line_color"/>  
+      <RelativeLayout android:id="@+id/main_menu_setting" android:layout_width="match_parent" android:layout_height="176px" android:layout_below="@id/shake_line" android:background="@drawable/on_item_selected"> 
+        <ImageView android:id="@+id/main_menu_setting_img" android:layout_width="80px" android:layout_height="80px" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginLeft="73px" android:src="@drawable/icon_menu_setting"/>  
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="64px" android:layout_toRightOf="@id/main_menu_setting_img" android:gravity="center" android:text="@string/sliding_menu_setting" android:textColor="#7e6866" android:textSize="14sp"/>  
+        <ImageView android:layout_width="48px" android:layout_height="48px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="73px" android:src="@drawable/icon_leftmenu_go"/> 
+      </RelativeLayout>  
+      <RelativeLayout android:id="@+id/guide_leftmenuRL" android:layout_width="672px" android:layout_height="wrap_content" android:layout_below="@id/main_menu_message" android:layout_marginLeft="166px" android:layout_marginTop="121px" android:background="@drawable/guidebg" android:visibility="gone"> 
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"> 
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="38px" android:text="@string/sliding_menu_guidetext" android:textColor="#ffffff" android:textSize="12sp"/>  
+          <RelativeLayout android:id="@+id/close_leftmenuRl" android:layout_width="128px" android:layout_height="118px" android:layout_alignParentRight="true" android:clickable="true"> 
+            <ImageView android:layout_width="48px" android:layout_height="48px" android:layout_alignParentRight="true" android:layout_marginRight="16px" android:layout_marginTop="16px" android:background="@drawable/leftguide_close"/> 
+          </RelativeLayout> 
+        </RelativeLayout> 
+      </RelativeLayout>  
+      <View android:id="@+id/setting_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@id/main_menu_setting" android:layout_marginLeft="38px" android:layout_marginRight="38px" android:background="@color/comm_line_color"/>  
+      <RelativeLayout android:id="@+id/main_menu_feedback" android:layout_width="match_parent" android:layout_height="176px" android:layout_below="@id/setting_line" android:background="@drawable/on_item_selected"> 
+        <ImageView android:id="@+id/main_menu_feedback_img" android:layout_width="80px" android:layout_height="80px" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginLeft="73px" android:src="@drawable/icon_menu_feedback"/>  
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="64px" android:layout_toRightOf="@id/main_menu_feedback_img" android:gravity="center" android:text="@string/activity_helper_feedback" android:textColor="#7e6866" android:textSize="14sp"/> 
+      </RelativeLayout>  
+      <View android:id="@+id/feedback_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@id/main_menu_feedback" android:layout_marginLeft="38px" android:layout_marginRight="38px" android:background="@color/comm_line_color"/>  
+      <Button android:id="@+id/main_menu_exitBtn" android:layout_width="match_parent" android:layout_height="150px" android:layout_below="@id/feedback_line" android:layout_marginLeft="73px" android:layout_marginRight="73px" android:layout_marginTop="48px" android:background="@drawable/btn_red_selector" android:text="@string/sliding_menu_exit" android:textColor="@color/white" android:textSize="17sp"/> 
+    </RelativeLayout> 
+  </LinearLayout>  
+  <LinearLayout android:id="@+id/layout_menu_close" android:layout_width="192px" android:layout_height="192px" android:layout_alignParentRight="true" android:gravity="center"> 
+    <ImageView android:layout_width="96px" android:layout_height="96px" android:background="@drawable/btn_leftmenuclose_selector"/> 
+  </LinearLayout> 
+</RelativeLayout>

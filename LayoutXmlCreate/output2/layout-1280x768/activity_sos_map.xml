@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/comm_activity_background" android:orientation="vertical">  
+  <include android:id="@+id/sosmap_title" layout="@layout/comm_title_bar"/>  
+  <com.amap.api.maps.MapView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/sosmap_title"/>  
+  <LinearLayout android:id="@+id/sos_map_callLL" android:layout_width="match_parent" android:layout_height="102px" android:layout_alignParentBottom="true" android:background="@drawable/activity_bottombg" android:gravity="center" android:orientation="horizontal"> 
+    <ImageView android:layout_width="64px" android:layout_height="64px" android:background="@drawable/bottom_call_img"/>  
+    <TextView android:id="@+id/txt_escort_chat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25px" android:text="@string/mainfragment_phoneTV" android:textColor="@color/white" android:textSize="20sp"/> 
+  </LinearLayout> 
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_activity_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/startescort_selectedLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38px"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/startescort_selectedImage1"
+                android:layout_width="74px"
+                android:layout_height="74px"
+                android:background="@drawable/starttrip_selectedbg" />
+
+            <ImageView
+                android:id="@+id/startescort_selectedImage2"
+                android:layout_width="74px"
+                android:layout_height="74px"
+                android:layout_marginLeft="18px"
+                android:background="@drawable/starttrip_selectedbg" />
+
+            <ImageView
+                android:id="@+id/startescort_selectedImage3"
+                android:layout_width="74px"
+                android:layout_height="74px"
+                android:layout_marginLeft="18px"
+                android:background="@drawable/starttrip_selectedbg" />
+
+            <ImageView
+                android:id="@+id/startescort_selectedImage4"
+                android:layout_width="74px"
+                android:layout_height="74px"
+                android:layout_marginLeft="18px"
+                android:background="@drawable/starttrip_selectedbg" />
+
+            <ImageView
+                android:id="@+id/startescort_selectedImage5"
+                android:layout_width="74px"
+                android:layout_height="74px"
+                android:layout_marginLeft="18px"
+                android:background="@drawable/starttrip_selectedbg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/startescort_nearlyLL"
+            android:layout_width="640px"
+            android:layout_height="258px"
+            android:layout_below="@+id/startescort_selectedLL"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48px"
+            android:background="@drawable/starttrip_nearlybg"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/startescort_nearlyitem1"
+                    android:layout_width="168px"
+                    android:layout_height="168px"
+                    android:layout_gravity="center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/startescort_nearlyimage1"
+                        android:layout_width="147px"
+                        android:layout_height="147px"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/starttrip_nearlyitembg" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/activity_startescort_nearlytext"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/startescort_nearlyitem2"
+                    android:layout_width="168px"
+                    android:layout_height="168px"
+                    android:layout_gravity="center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/startescort_nearlyimage2"
+                        android:layout_width="147px"
+                        android:layout_height="147px"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/starttrip_nearlyitembg" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/activity_startescort_nearlytext"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/startescort_nearlyitem3"
+                    android:layout_width="168px"
+                    android:layout_height="168px"
+                    android:layout_gravity="center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/startescort_nearlyimage3"
+                        android:layout_width="147px"
+                        android:layout_height="147px"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/starttrip_nearlyitembg" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/activity_startescort_nearlytext"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/startescort_startBtn"
+            android:layout_width="match_parent"
+            android:layout_height="94px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="68px"
+            android:layout_marginLeft="54px"
+            android:layout_marginRight="54px"
+            android:background="@drawable/btn_red_selector"
+            android:gravity="center"
+            android:text="@string/activity_startescort_sendBtntext"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/startescort_startBtn"
+            android:layout_below="@+id/startescort_nearlyLL"
+            android:layout_marginBottom="24px"
+            android:layout_marginTop="24px"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/startescort_familiesGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="320px"
+                android:layout_centerInParent="true"
+                android:layout_margin="68px"
+                android:gravity="center"
+                android:horizontalSpacing="12px"
+                android:listSelector="@color/transparent"
+                android:numColumns="auto_fit"
+                android:scrollbars="none"
+                android:verticalSpacing="12px" >
+            </GridView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

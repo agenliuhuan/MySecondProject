@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/comm_activity_background">  
+  <RelativeLayout android:id="@+id/message_titlebar" android:layout_width="match_parent" android:layout_height="144px" android:background="@color/comm_titlebg_color"> 
+    <Button android:id="@+id/message_titlebar_leftBtn" android:layout_width="81px" android:layout_height="81px" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginLeft="36px" android:background="@drawable/btn_titlebar_left_selector"/>  
+    <TextView android:id="@+id/message_titlebar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="@string/activity_message_titile" android:textColor="@color/white" android:textSize="23sp"/>  
+    <ImageView android:id="@+id/message_titlebar_img" android:layout_width="37px" android:layout_height="16px" android:layout_centerVertical="true" android:layout_toRightOf="@id/message_titlebar_title" android:src="@drawable/white_godown"/>  
+    <TextView android:id="@+id/message_titlebar_righttext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="36px" android:text="@string/activity_message_titleclear" android:textColor="@color/white" android:textSize="15sp"/> 
+  </RelativeLayout>  
+  <ListView android:id="@+id/messageXList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/message_titlebar" android:cacheColorHint="@android:color/transparent" android:divider="@color/transparent" android:fastScrollEnabled="true" android:headerDividersEnabled="true" android:listSelector="@color/transparent" android:scrollbars="none" android:visibility="gone"/>  
+  <RelativeLayout android:id="@+id/message_nullRL" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/message_titlebar"> 
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:gravity="center" android:orientation="vertical"> 
+      <ImageView android:layout_width="387px" android:layout_height="540px" android:src="@drawable/message_nullimage"/>  
+      <TextView android:layout_width="300px" android:layout_height="wrap_content" android:text="@string/activity_nomessage" android:textColor="#888888" android:textSize="15sp"/> 
+    </LinearLayout> 
+  </RelativeLayout>  
+  <RelativeLayout android:id="@+id/message_title_choiceRL" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/message_titlebar" android:background="#cc000000" android:visibility="invisible"> 
+    <LinearLayout android:id="@+id/message_title_choiceLL" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#d0ffffff" android:orientation="vertical"> 
+      <TextView android:id="@+id/message_allmsgTV" android:layout_width="match_parent" android:layout_height="123px" android:background="@drawable/on_item_selected" android:gravity="center" android:text="@string/activity_message_allmsg" android:textColor="#ff6d5b" android:textSize="15sp"/>  
+      <View android:layout_width="match_parent" android:layout_height="1px" android:background="@color/comm_line_color"/>  
+      <TextView android:id="@+id/message_sosmsgTV" android:layout_width="match_parent" android:layout_height="123px" android:background="@drawable/on_item_selected" android:gravity="center" android:text="@string/activity_message_sosmsg" android:textColor="#ff6d5b" android:textSize="15sp"/>  
+      <View android:layout_width="match_parent" android:layout_height="1px" android:background="@color/comm_line_color"/>  
+      <TextView android:id="@+id/message_tripmsgTV" android:layout_width="match_parent" android:layout_height="123px" android:background="@drawable/on_item_selected" android:gravity="center" android:text="@string/activity_message_tripmsg" android:textColor="#ff6d5b" android:textSize="15sp"/>  
+      <View android:layout_width="match_parent" android:layout_height="1px" android:background="@color/comm_line_color"/>  
+      <TextView android:id="@+id/message_othermsgTV" android:layout_width="match_parent" android:layout_height="123px" android:background="@drawable/on_item_selected" android:gravity="center" android:text="@string/activity_message_othermsg" android:textColor="#ff6d5b" android:textSize="15sp"/> 
+    </LinearLayout> 
+  </RelativeLayout> 
+</RelativeLayout>

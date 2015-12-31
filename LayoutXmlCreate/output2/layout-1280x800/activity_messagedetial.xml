@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/transparent">  
+  <include android:id="@+id/messagedetail_titlebar" layout="@layout/comm_title_bar"/>  
+  <com.amap.api.maps.MapView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/messagedetail_titlebar"/>  
+  <RelativeLayout android:id="@+id/mesgdetial_bottomRL" android:layout_width="match_parent" android:layout_height="106px" android:layout_alignParentBottom="true" android:background="@drawable/activity_bottombg"> 
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal"> 
+      <LinearLayout android:id="@+id/messagedetail_smsLL" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="horizontal"> 
+        <ImageView android:id="@+id/messagedetail_smsimg" android:layout_width="62px" android:layout_height="62px" android:background="@drawable/escort_chats"/>  
+        <TextView android:id="@+id/messagedetail_smstext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26px" android:text="@string/mainfragment_chatTV" android:textColor="@color/white" android:textSize="20sp"/>  
+        <TextView android:id="@+id/txt_messagedetail_msg_count" android:layout_width="41px" android:layout_height="41px" android:layout_gravity="top" android:layout_marginTop="11px" android:background="@drawable/icon_menu_red_point" android:gravity="center" android:textColor="#ffffff" android:textSize="11sp" android:visibility="gone"/> 
+      </LinearLayout>  
+      <View android:layout_width="1px" android:layout_height="match_parent" android:layout_marginBottom="5px" android:layout_marginTop="5px" android:background="@color/comm_line_color"/>  
+      <LinearLayout android:id="@+id/messagedetail_callLL" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="horizontal"> 
+        <ImageView android:id="@+id/messagedetail_callimg" android:layout_width="62px" android:layout_height="62px" android:background="@drawable/titlebar_rightphone"/>  
+        <TextView android:id="@+id/messagedetail_calltext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26px" android:text="@string/mainfragment_phoneTV" android:textColor="@color/white" android:textSize="20sp"/> 
+      </LinearLayout> 
+    </LinearLayout> 
+  </RelativeLayout> 
+</RelativeLayout>

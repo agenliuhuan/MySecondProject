@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@color/comm_activity_background" android:orientation="vertical">  
+  <include layout="@layout/comm_title_bar"/>  
+  <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="17px" android:layout_marginRight="17px" android:layout_marginTop="17px"> 
+    <Button android:id="@+id/btn_searchadd_sure" android:layout_width="128px" android:layout_height="78px" android:layout_alignParentRight="true" android:background="@drawable/btn_red_selector" android:gravity="center" android:text="@string/activity_searchadd_btnsure" android:textColor="@color/white" android:textSize="@dimen/font_size_16"/>  
+    <EditText android:id="@+id/edt_searchadd_phone" android:layout_width="match_parent" android:layout_height="78px" android:layout_marginRight="17px" android:layout_toLeftOf="@+id/btn_searchadd_sure" android:background="@drawable/edt_general_withe" android:hint="@string/activity_searchadd_edt_phone" android:inputType="phone" android:paddingLeft="64px" android:paddingRight="17px" android:textColorHint="#b5b5b5" android:textSize="15sp"> 
+      <requestFocus/> 
+    </EditText>  
+    <ImageView android:layout_width="42px" android:layout_height="42px" android:layout_centerVertical="true" android:layout_marginLeft="12px" android:src="@drawable/addfamily_edit_serch"/>  
+    <ImageView android:id="@+id/searchadd_phone_clearimg" android:layout_width="40px" android:layout_height="40px" android:layout_centerVertical="true" android:layout_marginRight="53px" android:layout_toLeftOf="@+id/btn_searchadd_sure" android:src="@drawable/edit_delete_icon" android:visibility="invisible"/> 
+  </RelativeLayout>  
+  <View android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="27px" android:background="@color/comm_line_color"/>  
+  <LinearLayout android:id="@+id/searchadd_contactsLL" android:layout_width="match_parent" android:layout_height="121px" android:background="@color/white" android:orientation="horizontal"> 
+    <ImageView android:layout_width="57px" android:layout_height="57px" android:layout_gravity="center_vertical" android:layout_marginLeft="25px" android:background="@drawable/icon_phone"/>  
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_marginLeft="25px" android:text="@string/activity_searchadd_phonetip" android:textColor="#6f6f6f" android:textSize="15sp"/> 
+  </LinearLayout>  
+  <View android:layout_width="match_parent" android:layout_height="1px" android:background="@color/comm_line_color"/>  
+  <LinearLayout android:id="@+id/searchadd_weichatLL" android:layout_width="match_parent" android:layout_height="121px" android:background="@color/white" android:orientation="horizontal"> 
+    <ImageView android:layout_width="57px" android:layout_height="57px" android:layout_gravity="center_vertical" android:layout_marginLeft="25px" android:background="@drawable/icon_wechat"/>  
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_marginLeft="25px" android:text="@string/activity_searchadd_weichattip" android:textColor="#6f6f6f" android:textSize="15sp"/> 
+  </LinearLayout>  
+  <View android:layout_width="match_parent" android:layout_height="1px" android:background="@color/comm_line_color"/>  
+  <LinearLayout android:id="@+id/searchadd_qqLL" android:layout_width="match_parent" android:layout_height="121px" android:background="@color/white" android:orientation="horizontal"> 
+    <ImageView android:layout_width="57px" android:layout_height="57px" android:layout_gravity="center_vertical" android:layout_marginLeft="25px" android:background="@drawable/icon_qq"/>  
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_marginLeft="25px" android:text="@string/activity_searchadd_qqtip" android:textColor="#6f6f6f" android:textSize="15sp"/> 
+  </LinearLayout>  
+  <View android:layout_width="match_parent" android:layout_height="1px" android:background="@color/comm_line_color"/> 
+</LinearLayout>

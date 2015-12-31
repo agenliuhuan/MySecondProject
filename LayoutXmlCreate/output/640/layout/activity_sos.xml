@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/comm_activity_background" android:orientation="vertical" tools:context="${packageName}.${activityClass}">  
+  <include android:id="@+id/sos_title" layout="@layout/comm_title_bar"/>  
+  <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/sos_title"> 
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"> 
+      <LinearLayout android:id="@+id/layout_sos_countdown" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="vertical" android:visibility="visible"> 
+        <TextView android:layout_width="536px" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="40px" android:text="@string/activity_sos_tip" android:textColor="#888888" android:textSize="12sp"/>  
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="83px"> 
+          <ImageView android:id="@+id/img_sos_circle_down" android:layout_width="430px" android:layout_height="430px" android:layout_centerInParent="true" android:src="@drawable/sos_circle_down"/>  
+          <ImageView android:id="@+id/img_sos_second" android:layout_width="133px" android:layout_height="187px" android:layout_centerInParent="true" android:src="@drawable/sos_9"/> 
+        </RelativeLayout>  
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="96px" android:gravity="center_horizontal" android:orientation="horizontal"> 
+          <Button android:id="@+id/btn_sos_cancel" android:layout_width="252px" android:layout_height="69px" android:background="@drawable/btn_register_selector" android:text="@string/btn_cancel" android:textColor="#0c92df" android:textSize="@dimen/font_size_18"/>  
+          <Button android:id="@+id/btn_sos_ok" android:layout_width="252px" android:layout_height="69px" android:layout_marginLeft="30px" android:background="@drawable/btn_login_selector" android:text="@string/activity_sosok_btn" android:textColor="#ffffff" android:textSize="@dimen/font_size_18"/> 
+        </LinearLayout> 
+      </LinearLayout>  
+      <LinearLayout android:id="@+id/layout_sos_result" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone"> 
+        <LinearLayout android:layout_width="match_parent" android:layout_height="152px" android:gravity="center_vertical" android:orientation="horizontal"> 
+          <ImageView android:layout_width="39px" android:layout_height="58px" android:layout_marginLeft="65px" android:src="@drawable/icon_sos_result"/>  
+          <TextView android:layout_width="423px" android:layout_height="match_parent" android:layout_marginLeft="39px" android:gravity="center_vertical" android:text="@string/activity_sos_result_tip" android:textColor="#888888" android:textSize="13sp"/> 
+        </LinearLayout>  
+        <ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="@color/comm_activity_title_background"/>  
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="433px"> 
+          <FrameLayout android:id="@+id/sos_map" android:layout_width="match_parent" android:layout_height="match_parent"/>  
+          <ImageView android:id="@+id/sos_map_centerImg" android:layout_width="35px" android:layout_height="35px" android:layout_centerInParent="true" android:background="@drawable/sos_mapcenter_img"/> 
+        </RelativeLayout>  
+        <ImageView android:layout_width="match_parent" android:layout_height="1px" android:background="@color/comm_activity_title_background"/>  
+        <LinearLayout android:layout_width="536px" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="60px" android:gravity="center_horizontal" android:orientation="horizontal"> 
+          <Button android:id="@+id/btn_sos_result_110" android:layout_width="261px" android:layout_height="72px" android:background="@drawable/btn_blue_selector" android:text="@string/activity_sos_result_110" android:textColor="@color/white" android:textSize="18sp"/>  
+          <Button android:id="@+id/btn_sos_result_nearby" android:layout_width="261px" android:layout_height="72px" android:layout_marginLeft="14px" android:background="@drawable/btn_blue_selector" android:text="@string/activity_sos_result_nearby" android:textColor="@color/white" android:textSize="18sp"/> 
+        </LinearLayout>  
+        <Button android:id="@+id/btn_sos_result_confirm" android:layout_width="536px" android:layout_height="72px" android:layout_gravity="center_horizontal" android:layout_marginBottom="31px" android:layout_marginTop="17px" android:background="@drawable/btn_green_selector" android:text="@string/btn_close" android:textColor="@color/white" android:textSize="18sp"/> 
+      </LinearLayout> 
+    </RelativeLayout> 
+  </ScrollView>  
+  <RelativeLayout android:id="@+id/nearsosRL" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/sos_title" android:background="@color/comm_black_transparent_background" android:visibility="gone"> 
+    <ListView android:id="@+id/lv_nearsos" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="177px" android:background="#ffffff" android:cacheColorHint="@android:color/transparent" android:descendantFocusability="afterDescendants" android:divider="#cdcdcd" android:dividerHeight="1px" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:listSelector="@color/transparent" android:scrollbars="none"></ListView> 
+  </RelativeLayout> 
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fragment_main" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/comm_activity_background" android:orientation="vertical">  
+  <include android:id="@+id/layout_mainmap_title" layout="@layout/comm_title_bar" android:visibility="visible"/>  
+  <com.amap.api.maps.MapView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/layout_mainmap_title"/>  
+  <LinearLayout android:id="@+id/layout_main_familyLL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/layout_mainmap_title" android:layout_marginLeft="9px" android:layout_marginTop="9px" android:background="@drawable/main_listbg" android:orientation="vertical"> 
+    <Button android:id="@+id/layout_main_showfamilyBtn" android:layout_width="72px" android:layout_height="72px" android:layout_gravity="center_horizontal" android:layout_marginTop="9px" android:background="@drawable/main_backupbtn_selector"/>  
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginBottom="9px" android:orientation="vertical"> 
+      <RelativeLayout android:id="@+id/layout_main_familyListRL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4px" android:orientation="vertical" android:visibility="visible"> 
+        <ListView android:id="@+id/layout_main_familyList" android:layout_width="84px" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:cacheColorHint="@android:color/transparent" android:divider="@color/transparent" android:dividerHeight="3px" android:fastScrollEnabled="true" android:headerDividersEnabled="true" android:listSelector="@color/transparent" android:scrollbars="none"/>  
+        <Button android:id="@+id/layout_main_addfamilyBtn" android:layout_width="72px" android:layout_height="72px" android:layout_below="@id/layout_main_familyList" android:layout_centerHorizontal="true" android:layout_marginTop="4px" android:background="@drawable/main_addbtn_selector"/>  
+        <Button android:id="@+id/layout_main_editfamilyBtn" android:layout_width="72px" android:layout_height="72px" android:layout_below="@id/layout_main_addfamilyBtn" android:layout_centerHorizontal="true" android:layout_marginTop="4px" android:background="@drawable/main_editbtn_selector"/> 
+      </RelativeLayout> 
+    </LinearLayout> 
+  </LinearLayout>  
+  <RelativeLayout android:id="@+id/guide_addfamilyRL" android:layout_width="195px" android:layout_height="wrap_content" android:background="@drawable/guidebg" android:visibility="gone"> 
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"> 
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="3px" android:orientation="vertical"> 
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_guide_addfamily_text" android:textColor="#ffffff" android:textSize="12sp"/>  
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_guide_addfamily_text1" android:textColor="#ffffff" android:textSize="12sp"/> 
+      </LinearLayout>  
+      <RelativeLayout android:id="@+id/close_addfamilyRl" android:layout_width="60px" android:layout_height="55px" android:layout_alignParentRight="true" android:clickable="true"> 
+        <ImageView android:layout_width="22px" android:layout_height="22px" android:layout_alignParentRight="true" android:layout_marginTop="3px" android:background="@drawable/leftguide_close"/> 
+      </RelativeLayout> 
+    </RelativeLayout> 
+  </RelativeLayout>  
+  <Button android:id="@+id/main_myLocationBtn" android:layout_width="54px" android:layout_height="54px" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_marginBottom="36px" android:layout_marginRight="18px" android:background="@drawable/main_myaddress_selector"/>  
+  <RelativeLayout android:id="@+id/shareMyLocationRL" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#cc000000" android:visibility="gone"> 
+    <LinearLayout android:id="@+id/shareLL" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:background="@color/white" android:orientation="vertical"> 
+      <TextView android:layout_width="match_parent" android:layout_height="64px" android:gravity="center" android:text="@string/main_sharemylocation_title" android:textColor="#fe5b49" android:textSize="15sp"/>  
+      <TextView android:layout_width="match_parent" android:layout_height="1px" android:background="#d8d8d8"/>  
+      <ListView android:id="@+id/shareMyLocation_listview" android:layout_width="match_parent" android:layout_height="310px" android:background="@color/comm_activity_background" android:cacheColorHint="@android:color/transparent" android:divider="@color/transparent" android:fastScrollEnabled="false"/>  
+      <TextView android:layout_width="match_parent" android:layout_height="1px" android:background="#d8d8d8"/>  
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="37px" android:orientation="horizontal"> 
+        <Button android:id="@+id/shareWchatBtn" android:layout_width="82px" android:layout_height="82px" android:layout_marginLeft="46px" android:background="@drawable/btn_sharewchat_selector"/>  
+        <Button android:id="@+id/shareCircleBtn" android:layout_width="82px" android:layout_height="82px" android:layout_marginLeft="39px" android:background="@drawable/btn_sharecircle_selector"/>  
+        <Button android:id="@+id/shareQQBtn" android:layout_width="82px" android:layout_height="82px" android:layout_marginLeft="39px" android:background="@drawable/btn_shareqq_selector"/>  
+        <Button android:id="@+id/shareMsgBtn" android:layout_width="82px" android:layout_height="82px" android:layout_marginLeft="39px" android:background="@drawable/btn_sharemessage_selector"/> 
+      </LinearLayout>  
+      <Button android:id="@+id/btn_share_cancel" android:layout_width="match_parent" android:layout_height="61px" android:layout_gravity="center_horizontal" android:layout_marginBottom="24px" android:layout_marginLeft="40px" android:layout_marginRight="40px" android:layout_marginTop="37px" android:background="@drawable/btn_red_selector" android:gravity="center" android:text="@string/main_sharemylocation_cancel" android:textColor="@color/white" android:textSize="@dimen/font_size_18"/> 
+    </LinearLayout> 
+  </RelativeLayout> 
+</RelativeLayout>

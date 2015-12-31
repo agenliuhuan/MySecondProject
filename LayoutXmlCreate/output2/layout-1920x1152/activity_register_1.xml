@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/activity_common_bg" android:orientation="vertical">  
+  <include android:id="@+id/titlebar_register_1" layout="@layout/comm_title_bar"/>  
+  <ImageView android:layout_width="352px" android:layout_height="352px" android:layout_gravity="center_horizontal" android:layout_marginTop="67px" android:src="@drawable/logo_image"/>  
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="76px" android:text="@string/activity_register_1_tv_tip_1" android:textColor="#d0ffffff" android:textSize="12sp"/>  
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="16px" android:text="@string/activity_register_1_tv_tip_2" android:textColor="#d0ffffff" android:textSize="12sp"/>  
+  <RelativeLayout android:layout_width="match_parent" android:layout_height="131px" android:layout_marginLeft="86px" android:layout_marginRight="86px" android:layout_marginTop="76px"> 
+    <EditText android:id="@+id/edt_register_1_phone" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/edt_general_normal" android:hint="@string/activity_register_1_edt_phone" android:inputType="number" android:paddingLeft="176px" android:textColor="@color/white" android:textColorHint="#80ffffff" android:textSize="15sp"> 
+      <requestFocus/> 
+    </EditText>  
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="32px" android:text="@string/activity_login_phone" android:textColor="@color/white" android:textSize="15sp"/>  
+    <ImageView android:id="@+id/register_phone_clearimg" android:layout_width="60px" android:layout_height="60px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="32px" android:src="@drawable/edit_delete_icon" android:visibility="invisible"/> 
+  </RelativeLayout>  
+  <RelativeLayout android:layout_width="match_parent" android:layout_height="131px" android:layout_marginLeft="86px" android:layout_marginRight="86px" android:layout_marginTop="28px"> 
+    <EditText android:id="@+id/edt_register_1_password" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/edt_general_normal" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" android:hint="@string/activity_register_1_tv_tip_3" android:inputType="textVisiblePassword" android:paddingLeft="176px" android:textColor="@color/white" android:textColorHint="#80ffffff" android:textSize="15sp"/>  
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="32px" android:text="@string/activity_login_password" android:textColor="@color/white" android:textSize="15sp"/>  
+    <ImageView android:id="@+id/register_psd_clearimg" android:layout_width="60px" android:layout_height="60px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="32px" android:src="@drawable/edit_delete_icon" android:visibility="invisible"/> 
+  </RelativeLayout>  
+  <RelativeLayout android:layout_width="match_parent" android:layout_height="131px" android:layout_marginLeft="86px" android:layout_marginRight="86px" android:layout_marginTop="28px"> 
+    <EditText android:id="@+id/edt_register_1_check" android:layout_width="560px" android:layout_height="match_parent" android:background="@drawable/edt_general_normal" android:hint="@string/activity_register_1_tv_tip_4" android:inputType="number" android:paddingLeft="256px" android:textColor="@color/white" android:textColorHint="#80ffffff" android:textSize="15sp"/>  
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="32px" android:text="@string/activity_register_1_edt_check" android:textColor="@color/white" android:textSize="15sp"/>  
+    <Button android:id="@+id/register_1_resendBtn" android:layout_width="400px" android:layout_height="match_parent" android:layout_marginLeft="28px" android:layout_toRightOf="@+id/edt_register_1_check" android:background="@drawable/btn_red_selector" android:gravity="center" android:text="@string/activity_register_1_tv_send" android:textColor="@color/white" android:textSize="16sp"/> 
+  </RelativeLayout> 
+</LinearLayout>

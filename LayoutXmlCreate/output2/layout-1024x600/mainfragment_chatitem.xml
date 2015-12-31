@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:descendantFocusability="blocksDescendants">  
+  <RelativeLayout android:layout_width="match_parent" android:layout_height="100px"> 
+    <ImageView android:id="@+id/fragment_chatitem_userimg" android:layout_width="71px" android:layout_height="71px" android:layout_centerVertical="true" android:layout_marginLeft="16px" android:src="@drawable/user_online"/>  
+    <TextView android:id="@+id/fragment_chatitem_msgTV" android:layout_width="30px" android:layout_height="30px" android:layout_marginLeft="66px" android:layout_marginTop="8px" android:background="@drawable/icon_menu_red_point" android:gravity="center" android:textColor="#ffffff" android:textSize="11sp" android:visibility="gone"/>  
+    <RelativeLayout android:id="@+id/fragment_chatitem_rightRL" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_marginRight="16px"> 
+      <TextView android:id="@+id/fragment_chatitem_timetv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:ellipsize="end" android:singleLine="true" android:textColor="#a4a4a4" android:textSize="10sp"/>  
+      <CheckBox android:id="@+id/fragment_chatitem_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:background="@drawable/chatitem_check_selector" android:button="@null" android:focusable="false" android:visibility="gone"/> 
+    </RelativeLayout>  
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="20px" android:layout_marginRight="20px" android:layout_toLeftOf="@+id/fragment_chatitem_rightRL" android:layout_toRightOf="@+id/fragment_chatitem_userimg" android:orientation="vertical"> 
+      <TextView android:id="@+id/fragment_chatitem_titletv" android:layout_width="match_parent" android:layout_height="wrap_content" android:ellipsize="end" android:singleLine="true" android:textColor="#000000" android:textSize="15sp"/>  
+      <TextView android:id="@+id/fragment_chatitem_contenttv" android:layout_width="match_parent" android:layout_height="wrap_content" android:ellipsize="end" android:singleLine="true" android:textColor="#a4a4a4" android:textSize="12sp"/> 
+    </LinearLayout> 
+  </RelativeLayout> 
+</RelativeLayout>

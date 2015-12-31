@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#ffffff">  
+  <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"> 
+    <ImageView android:id="@+id/bottomImg" android:layout_width="600px" android:layout_height="434px" android:layout_alignParentBottom="true" android:background="@drawable/splash_logo"/>  
+    <TextView android:id="@+id/txt_copyright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="53px" android:text="@string/copyright" android:textColor="#dc6e67" android:textSize="13sp"/>  
+    <ImageView android:id="@+id/img_for_qq" android:layout_width="397px" android:layout_height="60px" android:layout_above="@+id/txt_copyright" android:layout_centerHorizontal="true" android:layout_marginBottom="66px" android:background="@drawable/splash_for_qq"/>  
+    <ImageView android:id="@+id/img_app_name" android:layout_width="325px" android:layout_height="185px" android:layout_above="@+id/img_for_qq" android:layout_centerHorizontal="true" android:layout_marginBottom="33px" android:background="@drawable/splash_app_name"/>  
+    <ImageView android:id="@+id/img_slogon" android:layout_width="285px" android:layout_height="277px" android:layout_above="@+id/img_app_name" android:layout_centerHorizontal="true" android:layout_marginBottom="20px" android:background="@drawable/splash_slogon"/> 
+  </RelativeLayout> 
+</RelativeLayout>

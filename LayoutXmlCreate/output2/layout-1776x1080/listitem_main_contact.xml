@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="150px" android:layout_height="wrap_content">  
+  <LinearLayout android:layout_width="150px" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:orientation="vertical"> 
+    <RelativeLayout android:id="@+id/listitem_contactRL" android:layout_width="150px" android:layout_height="150px" android:layout_centerHorizontal="true"> 
+      <ImageView android:id="@+id/listitem_contact_notselectimg" android:layout_width="150px" android:layout_height="150px" android:layout_centerInParent="true" android:background="@drawable/listitem_image_bg"/>  
+      <ImageView android:id="@+id/listitem_contact_selectimg" android:layout_width="150px" android:layout_height="150px" android:layout_centerInParent="true" android:background="@drawable/listitem_image_selectbg" android:visibility="invisible"/>  
+      <RelativeLayout android:layout_width="129px" android:layout_height="129px" android:layout_centerInParent="true"> 
+        <ImageView android:id="@+id/listitem_contact_img" android:layout_width="129px" android:layout_height="129px" android:layout_centerInParent="true" android:src="@drawable/listitem_default_img"/>  
+        <ImageView android:id="@+id/listitem_contact_status_img" android:layout_width="36px" android:layout_height="36px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:src="@drawable/listitem_contactstatus_inline"/>  
+        <TextView android:id="@+id/listitem_contact_name" android:layout_width="129px" android:layout_height="48px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:background="@drawable/itemcontact_namebg" android:gravity="center" android:singleLine="true" android:textColor="#667769" android:textSize="12sp"/> 
+      </RelativeLayout>  
+      <ImageView android:id="@+id/listitem_contact_del_img" android:layout_width="54px" android:layout_height="54px" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:src="@drawable/listitem_contact_delbtn" android:visibility="gone"/>  
+      <ImageView android:id="@+id/listitem_contact_escortImg" android:layout_width="150px" android:layout_height="150px" android:layout_centerInParent="true" android:background="@drawable/listitem_protecting" android:visibility="gone"/>  
+      <TextView android:id="@+id/listitem_contact_msg_count" android:layout_width="54px" android:layout_height="54px" android:layout_alignParentRight="true" android:layout_alignParentTop="true" android:background="@drawable/icon_menu_red_point" android:gravity="center" android:textColor="#ffffff" android:textSize="11sp" android:visibility="gone"/> 
+    </RelativeLayout>  
+    <LinearLayout android:id="@+id/listitem_contact_handleLL" android:layout_width="150px" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:orientation="vertical" android:visibility="gone"> 
+      <Button android:id="@+id/listitem_contact_chatimg" android:layout_width="108px" android:layout_height="108px" android:layout_gravity="center_horizontal" android:layout_marginTop="15px" android:background="@drawable/listitem_chat_selector" android:focusable="false"/>  
+      <Button android:id="@+id/listitem_contact_callimg" android:layout_width="108px" android:layout_height="108px" android:layout_gravity="center_horizontal" android:layout_marginTop="15px" android:background="@drawable/listitem_call_selector" android:focusable="false"/> 
+    </LinearLayout> 
+  </LinearLayout> 
+</RelativeLayout>

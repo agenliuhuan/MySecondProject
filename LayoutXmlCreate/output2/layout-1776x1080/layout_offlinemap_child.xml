@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">  
+  <RelativeLayout android:layout_width="match_parent" android:layout_height="132px" android:background="#f0f0f0"> 
+    <TextView android:id="@+id/city_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="81px" android:textColor="#6f6f6f" android:textSize="14sp"/>  
+    <TextView android:id="@+id/city_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toRightOf="@id/city_name" android:textColor="#ce9e75" android:textSize="14sp"/>  
+    <TextView android:id="@+id/city_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="36px" android:layout_toRightOf="@id/city_size" android:textColor="#b5b5b5" android:textSize="14sp"/>  
+    <ProgressBar android:id="@+id/mapdowanload_progress" android:layout_width="180px" android:layout_height="15px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="120px" android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal" android:indeterminateOnly="false" android:padding="3px" android:progress="10" android:progressDrawable="@drawable/download_map_progressbar" android:visibility="invisible"/>  
+    <ImageView android:id="@+id/mapdowanload_img" android:layout_width="60px" android:layout_height="60px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="48px" android:src="@drawable/map_downloading"/> 
+  </RelativeLayout> 
+</RelativeLayout>

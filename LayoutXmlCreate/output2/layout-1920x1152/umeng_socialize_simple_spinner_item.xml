@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="128px" android:padding="12px">  
+  <ImageView android:id="@+id/umeng_socialize_spinner_img" android:layout_width="102px" android:layout_height="102px" android:scaleType="fitXY"/>  
+  <TextView android:id="@+id/umeng_socialize_spinner_txt" android:paddingLeft="64px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/umeng_socialize_spinner_img" android:gravity="center_vertical"/> 
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="83px" android:layout_centerHorizontal="true">  
+  <LinearLayout android:id="@+id/escort_LL" android:layout_width="wrap_content" android:layout_height="83px" android:background="@drawable/listitem_image_bg" android:gravity="center" android:orientation="horizontal"> 
+    <RelativeLayout android:id="@+id/escort_contactRL" android:layout_width="83px" android:layout_height="83px"> 
+      <ImageView android:id="@+id/escort_contact_img" android:layout_width="71px" android:layout_height="71px" android:layout_centerInParent="true" android:src="@drawable/listitem_default_img"/>  
+      <TextView android:id="@+id/escort_contact_name" android:layout_width="71px" android:layout_height="26px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="5px" android:background="@drawable/itemcontact_namebg" android:gravity="center" android:singleLine="true" android:textColor="#667769" android:textSize="12sp"/>  
+      <ImageView android:id="@+id/escort_contact_status_img" android:layout_width="20px" android:layout_height="20px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="5px" android:src="@drawable/listitem_contactstatus_inline"/>  
+      <ImageView android:id="@+id/escort_contact_escortImg" android:layout_width="83px" android:layout_height="83px" android:layout_centerInParent="true" android:background="@drawable/listitem_protecting" android:visibility="gone"/> 
+    </RelativeLayout>  
+    <ImageView android:id="@+id/escort_call_img" android:layout_width="50px" android:layout_height="50px" android:layout_marginLeft="10px" android:layout_marginRight="20px" android:background="@drawable/escort_phone_selector" android:visibility="gone"/> 
+  </LinearLayout> 
+</RelativeLayout>

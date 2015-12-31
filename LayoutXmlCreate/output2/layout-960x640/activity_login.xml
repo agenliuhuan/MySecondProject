@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cn.changl.safe360.android.ui.comm.InputMethodDetectLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scrollview_login" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/activity_common_bg" android:orientation="vertical">  
+  <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"> 
+    <include android:id="@+id/layout_title" layout="@layout/comm_title_bar"/>  
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"> 
+      <RelativeLayout android:layout_width="220px" android:layout_height="220px" android:layout_gravity="center_horizontal" android:layout_marginTop="24px" android:background="@drawable/head_bg"> 
+        <ImageView android:id="@+id/login_headImg" android:layout_width="177px" android:layout_height="177px" android:layout_centerInParent="true" android:src="@drawable/user_default_image"/> 
+      </RelativeLayout>  
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="48px" android:layout_marginRight="48px" android:layout_marginTop="42px" android:orientation="vertical"> 
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="72px" android:background="@drawable/edt_general_normal"> 
+          <ImageView android:id="@+id/login_phone_img" android:layout_width="42px" android:layout_height="42px" android:layout_centerVertical="true" android:layout_marginLeft="17px" android:src="@drawable/login_account_icon"/>  
+          <ImageView android:id="@+id/login_phone_clearimg" android:layout_width="33px" android:layout_height="33px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="17px" android:src="@drawable/edit_delete_icon" android:visibility="invisible"/>  
+          <EditText android:id="@+id/edt_login_phone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_marginLeft="21px" android:layout_toLeftOf="@+id/login_phone_clearimg" android:layout_toRightOf="@+id/login_phone_img" android:background="@color/transparent" android:hint="@string/activity_login_edt_phone" android:inputType="number" android:textColor="@color/white" android:textColorHint="#80ffffff" android:textSize="15sp"></EditText> 
+        </RelativeLayout>  
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="72px" android:layout_marginTop="16px" android:background="@drawable/edt_general_normal"> 
+          <ImageView android:id="@+id/login_password_img" android:layout_width="42px" android:layout_height="42px" android:layout_centerVertical="true" android:layout_marginLeft="17px" android:src="@drawable/login_psd_icon"/>  
+          <ImageView android:id="@+id/login_password_clearimg" android:layout_width="33px" android:layout_height="33px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="17px" android:src="@drawable/edit_delete_icon" android:visibility="invisible"/>  
+          <EditText android:id="@+id/edt_login_password" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_marginLeft="21px" android:layout_toLeftOf="@+id/login_password_clearimg" android:layout_toRightOf="@+id/login_password_img" android:background="@color/transparent" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" android:hint="@string/activity_login_edt_password" android:inputType="textVisiblePassword" android:textColor="@color/white" android:textColorHint="#80ffffff" android:textSize="15sp"/> 
+        </RelativeLayout> 
+      </LinearLayout>  
+      <TextView android:id="@+id/tv_login_fogot" android:layout_width="536px" android:layout_height="wrap_content" android:layout_gravity="center_horizontal|bottom" android:layout_marginTop="23px" android:gravity="center_vertical|right" android:text="@string/activity_login_tv_forgot" android:textColor="@color/white" android:textSize="15sp"/>  
+      <Button android:id="@+id/btn_login_login" android:layout_width="match_parent" android:layout_height="72px" android:layout_gravity="center_horizontal" android:layout_marginLeft="48px" android:layout_marginRight="48px" android:layout_marginTop="21px" android:background="@drawable/btn_red_selector" android:enabled="false" android:gravity="center" android:text="@string/activity_login_btn_login" android:textColor="@color/white" android:textSize="@dimen/font_size_18"/>  
+      <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="97px" android:layout_marginRight="97px" android:layout_marginTop="71px" android:orientation="horizontal"> 
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical"> 
+          <Button android:id="@+id/login_qq_btn" android:layout_width="98px" android:layout_height="98px" android:background="@drawable/btn_qq_selector"/>  
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="8px" android:text="@string/activity_login_btn_qqlogin" android:textColor="@color/white" android:textSize="13sp"/> 
+        </LinearLayout>  
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:orientation="vertical"> 
+          <Button android:id="@+id/login_wchat_btn" android:layout_width="98px" android:layout_height="98px" android:background="@drawable/btn_wchat_selector"/>  
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="8px" android:text="@string/activity_login_btn_wchatlogin" android:textColor="@color/white" android:textSize="13sp"/> 
+        </LinearLayout>  
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:orientation="vertical"> 
+          <Button android:id="@+id/login_weibo_btn" android:layout_width="98px" android:layout_height="98px" android:background="@drawable/btn_weibo_selector"/>  
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="8px" android:text="@string/activity_login_btn_weibologin" android:textColor="@color/white" android:textSize="13sp"/> 
+        </LinearLayout> 
+      </RelativeLayout> 
+    </LinearLayout> 
+  </LinearLayout> 
+</cn.changl.safe360.android.ui.comm.InputMethodDetectLayout>

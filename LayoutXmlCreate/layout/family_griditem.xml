@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="168px"
+        android:layout_height="168px" >
+
+        <ImageView
+            android:id="@+id/griditem_bg_img"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/starttrip_grid_userimgbg" />
+
+        <ImageView
+            android:id="@+id/griditem_contact_selectimg"
+            android:layout_width="168px"
+            android:layout_height="168px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/starttrip_grid_userimgselectbg" />
+
+        <ImageView
+            android:id="@+id/griditem_contact_img"
+            android:layout_width="138px"
+            android:layout_height="138px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/user_online" />
+
+        <ImageView
+            android:id="@+id/griditem_contact_status_img"
+            android:layout_width="26px"
+            android:layout_height="26px"
+            android:layout_marginRight="15px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user_status_online" />
+
+        <ImageView
+            android:id="@+id/griditem_contact_exitimg"
+            android:layout_width="138px"
+            android:layout_height="138px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/starttrip_grid_busybg"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/griditem_contact_name"
+        android:layout_width="168px"
+        android:layout_height="40px"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#808080"
+        android:textSize="12sp" />
+
+</LinearLayout>

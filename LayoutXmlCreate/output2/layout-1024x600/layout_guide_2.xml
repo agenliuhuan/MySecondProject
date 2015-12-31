@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#ffffff">  
+  <ImageView android:id="@+id/guide2_mapImg" android:layout_width="433px" android:layout_height="433px" android:layout_centerHorizontal="true" android:layout_marginTop="100px" android:src="@drawable/guide2_map"/>  
+  <ImageView android:id="@+id/guide2_girlImg" android:layout_width="162px" android:layout_height="190px" android:layout_alignParentRight="true" android:layout_marginRight="83px" android:layout_marginTop="53px" android:src="@drawable/guide2_girl" android:visibility="visible"/>  
+  <ImageView android:id="@+id/guide2_dunImg" android:layout_width="150px" android:layout_height="140px" android:layout_alignParentRight="true" android:layout_marginRight="66px" android:layout_marginTop="420px" android:src="@drawable/guide2_dun" android:visibility="visible"/>  
+  <ImageView android:id="@+id/guide2_boyImg" android:layout_width="153px" android:layout_height="271px" android:layout_marginLeft="83px" android:layout_marginTop="283px" android:src="@drawable/guide2_boy" android:visibility="visible"/>  
+  <TextView android:id="@+id/guide2_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/guide2_mapImg" android:layout_centerHorizontal="true" android:layout_marginTop="65px" android:text="@string/activity_guide_text2_2" android:textColor="#ff6b5c" android:textSize="32sp"/>  
+  <TextView android:id="@+id/guide2_tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/guide2_tv1" android:layout_centerHorizontal="true" android:layout_marginTop="20px" android:text="@string/activity_guide_text1_2" android:textColor="#8e8e8e" android:textSize="18sp"/> 
+</RelativeLayout>

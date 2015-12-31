@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background"
+    android:orientation="vertical"
+    tools:context="${packageName}.${activityClass}" >
+
+    <include
+        android:id="@+id/sos_title"
+        layout="@layout/comm_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sos_title" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/layout_sos_countdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/img_sos_rl"
+                    android:layout_width="480px"
+                    android:layout_height="480px"
+                    android:layout_marginTop="68px" >
+
+                    <ImageView
+                        android:id="@+id/img_sos_circle_down"
+                        android:layout_width="360px"
+                        android:layout_height="360px"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/sos_circle_down" />
+
+                    <ImageView
+                        android:id="@+id/img_sos_second"
+                        android:layout_width="146px"
+                        android:layout_height="200px"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/sos_9" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110px"
+                    android:layout_marginRight="110px"
+                    android:layout_marginTop="48px"
+                    android:gravity="center"
+                    android:text="@string/activity_sos_tip"
+                    android:textColor="#888888"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="48px"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_sos_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="88px"
+                        android:layout_marginLeft="54px"
+                        android:layout_marginRight="54px"
+                        android:background="@drawable/btn_red_selector"
+                        android:text="@string/activity_sosok_btn"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/font_size_18" />
+
+                    <Button
+                        android:id="@+id/btn_sos_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="88px"
+                        android:layout_marginLeft="54px"
+                        android:layout_marginRight="54px"
+                        android:layout_marginTop="28px"
+                        android:background="@drawable/btn_register_selector"
+                        android:text="@string/btn_cancel"
+                        android:textColor="#fe5b49"
+                        android:textSize="@dimen/font_size_18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_sos_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <TextView
+                    android:id="@+id/sos_tip_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="168px"
+                    android:layout_marginRight="168px"
+                    android:layout_marginTop="48px"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_sos_result_tip"
+                    android:textColor="#888888"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="488px"
+                    android:layout_marginLeft="54px"
+                    android:layout_marginRight="54px"
+                    android:layout_marginTop="48px" >
+
+                    <com.amap.api.maps.MapView
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/sos_map_centerImg"
+                        android:layout_width="40px"
+                        android:layout_height="40px"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/sos_mapcenter_img" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="54px"
+                    android:layout_marginRight="54px"
+                    android:layout_marginTop="48px" >
+
+                    <Button
+                        android:id="@+id/btn_sos_result_110"
+                        android:layout_width="264px"
+                        android:layout_height="82px"
+                        android:background="@drawable/btn_red_selector"
+                        android:text="@string/activity_sos_result_110"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btn_sos_result_nearby"
+                        android:layout_width="264px"
+                        android:layout_height="82px"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/btn_red_selector"
+                        android:text="@string/activity_sos_result_nearby"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_sos_result_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="82px"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="35px"
+                    android:layout_marginLeft="54px"
+                    android:layout_marginRight="54px"
+                    android:layout_marginTop="24px"
+                    android:background="@drawable/btn_register_selector"
+                    android:text="@string/btn_close"
+                    android:textColor="#fe5b49"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/nearsosRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sos_title"
+        android:background="@color/comm_black_transparent_background"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/lv_nearsos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="200px"
+            android:background="#ffffff"
+            android:cacheColorHint="@android:color/transparent"
+            android:descendantFocusability="afterDescendants"
+            android:divider="#cdcdcd"
+            android:dividerHeight="1px"
+            android:fastScrollEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

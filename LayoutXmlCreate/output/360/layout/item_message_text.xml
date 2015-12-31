@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">  
+  <TextView android:id="@+id/item_message_text_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="25px" android:background="@drawable/message_date_bg" android:paddingBottom="2px" android:paddingLeft="10px" android:paddingRight="10px" android:paddingTop="2px" android:text="date" android:textColor="#333333" android:textSize="12sp"/>  
+  <TextView android:id="@+id/item_message_text_content" android:layout_width="343px" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="8px" android:background="@drawable/item_message_sos_contentbg" android:padding="15px" android:textColor="#333333" android:textSize="15sp"/> 
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#ffffff">  
+  <ImageView android:id="@+id/guide1_earthImg" android:layout_width="780px" android:layout_height="780px" android:layout_centerHorizontal="true" android:layout_marginTop="180px" android:src="@drawable/guide_1earth"/>  
+  <ImageView android:id="@+id/guide1_people" android:layout_width="780px" android:layout_height="780px" android:layout_centerHorizontal="true" android:layout_marginTop="180px" android:src="@drawable/guide_1people" android:visibility="visible"/>  
+  <ImageView android:id="@+id/guide1_star1" android:layout_width="256px" android:layout_height="294px" android:layout_alignParentTop="true" android:layout_marginLeft="156px" android:layout_marginTop="177px" android:src="@drawable/guide1_star1" android:visibility="visible"/>  
+  <ImageView android:id="@+id/guide1_star2" android:layout_width="165px" android:layout_height="192px" android:layout_alignParentRight="true" android:layout_marginRight="96px" android:layout_marginTop="522px" android:src="@drawable/guide1_star2" android:visibility="visible"/>  
+  <ImageView android:id="@+id/guide1_star3" android:layout_width="138px" android:layout_height="154px" android:layout_marginLeft="330px" android:layout_marginTop="882px" android:src="@drawable/guide1_star3" android:visibility="visible"/>  
+  <TextView android:id="@+id/guide1_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/guide1_earthImg" android:layout_centerHorizontal="true" android:layout_marginTop="117px" android:text="@string/activity_guide_text2_1" android:textColor="#ff6b5c" android:textSize="32sp"/>  
+  <TextView android:id="@+id/guide1_tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/guide1_tv1" android:layout_centerHorizontal="true" android:layout_marginTop="36px" android:text="@string/activity_guide_text1_1" android:textColor="#8e8e8e" android:textSize="18sp"/> 
+</RelativeLayout>

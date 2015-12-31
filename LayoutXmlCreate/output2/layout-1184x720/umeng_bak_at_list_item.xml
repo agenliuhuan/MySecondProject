@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="90px" android:paddingTop="10px" android:paddingBottom="10px" android:background="#393D46">  
+  <ImageView android:id="@+id/umeng_socialize_avatar_imv" android:layout_width="70px" android:layout_height="70px" android:layout_centerVertical="true" android:layout_marginLeft="28px" android:scaleType="fitXY" android:src="@drawable/umeng_socialize_default_avatar"/>  
+  <TextView android:id="@+id/umeng_socialize_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24px" android:layout_toRightOf="@id/umeng_socialize_avatar_imv" android:layout_centerVertical="true" android:text="Label" android:textColor="#ffffff" android:textSize="18sp"/> 
+</RelativeLayout>

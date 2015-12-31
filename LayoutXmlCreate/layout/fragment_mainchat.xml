@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/mainchat_title"
+        layout="@layout/comm_title_bar" />
+
+    <ListView
+        android:id="@+id/mainchat_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainchat_title"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#dbdbdb"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:visibility="invisible" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/nochatRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainchat_title" >
+
+        <ImageView
+            android:layout_width="384px"
+            android:layout_height="360px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/nochat" />
+    </RelativeLayout>
+
+</RelativeLayout>

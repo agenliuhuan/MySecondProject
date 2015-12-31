@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">  
+  <RelativeLayout android:id="@+id/map_peopleinfo_window_infoRL" android:layout_width="518px" android:layout_height="match_parent" android:layout_gravity="center_horizontal" android:background="@drawable/map_infowindow_bg"> 
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal"> 
+      <Button android:id="@+id/map_peopleinfo_window_refreshBtn" android:layout_width="57px" android:layout_height="57px" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="8px" android:background="@drawable/mapinfo_refresh_selector"/>  
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="17px" android:layout_toLeftOf="@+id/map_peopleinfo_window_refreshBtn" android:orientation="vertical"> 
+        <TextView android:id="@+id/map_peopleinfo_window_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8px" android:ems="24" android:singleLine="true" android:text="@string/fragment_setting_tv_guide" android:textColor="#6f6f6f" android:textSize="13sp"/>  
+        <TextView android:id="@+id/map_peopleinfo_window_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4px" android:singleLine="true" android:text="@string/fragment_setting_tv_guide" android:textColor="#888888" android:textSize="11sp"/> 
+      </LinearLayout> 
+    </RelativeLayout> 
+  </RelativeLayout>  
+  <RelativeLayout android:id="@+id/map_peopleinfo_window_peopleRL" android:layout_width="121px" android:layout_height="130px" android:layout_gravity="center_horizontal" android:background="@drawable/map_people_selector"> 
+    <ImageView android:id="@+id/map_peopleinfo_window_peopleimg" android:layout_width="96px" android:layout_height="96px" android:layout_centerHorizontal="true" android:layout_marginTop="5px" android:src="@drawable/listitem_default_img"/> 
+  </RelativeLayout> 
+</LinearLayout>
