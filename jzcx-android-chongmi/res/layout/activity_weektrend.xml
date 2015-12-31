@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background_color"
+    android:orientation="vertical" >
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        app:layout_heightPercent="13%w"
+        android:background="@color/comm_title_color" >
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/weektrend_title_leftRL"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            app:layout_heightPercent="13%w"
+            app:layout_widthPercent="13%w" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_titlebar_left_normal" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/weektrend_title_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="2%w"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="60%w"
+        android:background="@color/comm_title_color" >
+
+        <ImageView
+            android:id="@+id/weektrend_previousImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="3.33%w"
+            android:background="@drawable/calendar_previous" />
+
+        <ImageView
+            android:id="@+id/weektrend_nextImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="3.33%w"
+            android:background="@drawable/calendar_next" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/weektrend_stepsLineChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:layout_heightPercent="50%w" >
+        </com.github.mikephil.charting.charts.LineChart>
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="50%w"
+            android:orientation="vertical" >
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="26.1%w"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/red_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_marginLeftPercent="3.33%w"
+                    android:text="@string/weektrend_daysteps"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:layout_heightPercent="69.44%w"
+                app:layout_marginTopPercent="14.44%w"
+                app:layout_widthPercent="69.44%w" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/weektrend_daysteps" />
+
+                <TextView
+                    android:id="@+id/weektrend_daystepsTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="#444444"
+                    android:textSize="27sp" />
+            </RelativeLayout>
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="50%w"
+            android:orientation="vertical" >
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="26.1%w"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_marginLeftPercent="3.33%w"
+                    android:text="@string/weektrend_weekstep"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:layout_heightPercent="69.44%w"
+                app:layout_marginTopPercent="14.44%w"
+                app:layout_widthPercent="69.44%w" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/weektrend_countsteps" />
+
+                <TextView
+                    android:id="@+id/weektrend_countstepsTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="#444444"
+                    android:textSize="27sp" />
+            </RelativeLayout>
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/comm_activity_background_color"
+        android:orientation="vertical" >
+
+        <mobi.jzcx.android.core.view.pulltozoom.PullToZoomListViewEx
+            android:id="@+id/petCenter_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/petcenter_emptyRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/petcenter_emptyimg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="@string/petcenter_emptytv"
+                android:textColor="#c3c3c3"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:id="@+id/petcentertitle_topRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/comm_title_color"
+        android:orientation="vertical" >
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                android:id="@+id/petcentertitle_leftRL"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                app:layout_heightPercent="13%w"
+                app:layout_widthPercent="13%w" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_titlebar_left_normal" />
+            </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+            <TextView
+                android:id="@+id/petcentertitle_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/petcenter_accountimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:layout_heightPercent="8.6%w"
+                app:layout_marginRightPercent="3.3%w"
+                app:layout_marginTopPercent="2%w"
+                app:layout_widthPercent="8.6%w"
+                fresco:placeholderImage="@drawable/avatar_default_image" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</FrameLayout>

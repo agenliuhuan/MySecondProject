@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background_color" >
+
+    <include
+        android:id="@+id/mypet_titlebar"
+        layout="@layout/comm_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mypet_titlebar"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/mypet_List"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="#d8d8d8"
+                    android:dividerHeight="1px"
+                    android:fastScrollEnabled="true"
+                    android:headerDividersEnabled="true"
+                    android:listSelector="@drawable/on_item_selected"
+                    android:scrollbars="none" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#d8d8d8" />
+
+                <mobi.jzcx.android.core.percent.PercentLinearLayout
+                    android:id="@+id/mypet_addpetLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_heightPercent="13.61%w"
+                    android:background="@drawable/on_item_selected"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pet_addicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_marginLeftPercent="2%w"
+                        android:text="@string/add_pet"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+                </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#d8d8d8" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homepage_titleLL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/comm_title_color"
+    android:orientation="vertical" >
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="13.61%w"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8.9%w"
+            app:layout_widthPercent="42.22%w"
+            android:background="@drawable/layout_title_bg"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:id="@+id/ll_home_title_dynamic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/layout_title_select_bg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_dynamic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dynamic"
+                    android:textColor="@color/comm_title_color"
+                    android:textSize="15sp" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:id="@+id/ll_home_title_attention"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/attention"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:id="@+id/ll_home_title_active"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/active"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

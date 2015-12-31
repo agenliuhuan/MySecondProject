@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/registeover_title"
+        layout="@layout/comm_title_bar" />
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registeover_title"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="41.6%w" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_pet_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/registeover_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+                app:layout_heightPercent="20.5%w"
+                app:layout_marginTopPercent="17%w"
+                app:layout_widthPercent="20.5%w"
+                fresco:placeholderImage="@drawable/avatar_default_image" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registeover_image"
+                app:layout_marginTopPercent="3.1%w"
+                android:gravity="center"
+                android:text="@string/registeover_tip1"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="13.6%w"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:layout_marginLeftPercent="3.4%w"
+                android:src="@drawable/master_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:layout_marginLeftPercent="3.4%w"
+                android:text="@string/registeover_nickname"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <mobi.jzcx.android.chongmi.view.ClearEditText
+                android:id="@+id/registeover_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:layout_marginLeftPercent="6.8%w"
+                app:layout_marginRightPercent="10%w"
+                android:background="@color/transparent"
+                android:hint="@string/registeover_nicknamehint"
+                android:inputType="text"
+                android:maxLength="10"
+                android:textColor="#666666"
+                android:textColorHint="#999999"
+                android:textSize="15sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_marginLeftPercent="12%w"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:id="@+id/registeover_choiceLL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="13.6%w"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:layout_marginLeftPercent="3.4%w"
+                android:src="@drawable/master_sex" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:layout_marginLeftPercent="3.4%w"
+                android:text="@string/registeover_choice"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:id="@+id/registover_manLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:layout_marginLeftPercent="6.8%w"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/registover_manImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/account_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:layout_marginLeftPercent="6.6%w"
+                    android:text="@string/registeover_choiceman"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:id="@+id/registover_womanLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:layout_marginLeftPercent="8.6%w"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/registover_womanImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/account_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:layout_marginLeftPercent="6.6%w"
+                    android:text="@string/registeover_choicewoman"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_marginLeftPercent="12%w"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/birthdayRL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="13.6%w"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_bir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3.4%w"
+                android:src="@drawable/master_birthday" />
+
+            <TextView
+                android:id="@+id/tv_bir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_bir"
+                app:layout_marginLeftPercent="3.4%w"
+                android:text="@string/registeover_birthday"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/birthdayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/tv_bir"
+                app:layout_marginLeftPercent="6.8%w"
+                android:text="@string/registeeditpet_birthday_select_tip"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="3.3%w"
+                android:src="@drawable/account_next" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d8d8d8" />
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="8.33%w"
+            app:layout_marginRightPercent="8.33%w"
+            app:layout_marginTopPercent="40%w"
+            android:background="@drawable/login_editbg"
+            android:orientation="vertical" >
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                app:layout_heightPercent="16.39%w"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:layout_marginLeftPercent="3%w"
+                    android:background="@drawable/login_phoneimg" />
+
+                <mobi.jzcx.android.chongmi.view.ClearEditText
+                    android:id="@+id/login_nameedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:layout_heightPercent="10%w"
+                    app:layout_marginLeftPercent="3%w"
+                    app:layout_marginRightPercent="3%w"
+                    android:background="@color/transparent"
+                    android:digits="@string/phone_digits_text"
+                    android:hint="@string/login_namehint"
+                    android:inputType="phone"
+                    android:textColor="#333333"
+                    android:textColorHint="#cfcece"
+                    android:textSize="17sp" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                app:layout_heightPercent="16.39%w"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:layout_marginLeftPercent="3%w"
+                    android:background="@drawable/login_psdimg" />
+
+                <mobi.jzcx.android.chongmi.view.ClearEditText
+                    android:id="@+id/login_psdedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:layout_heightPercent="10%w"
+                    app:layout_marginLeftPercent="3%w"
+                    app:layout_marginRightPercent="3%w"
+                    android:background="@color/transparent"
+                    android:hint="@string/login_psdhint"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:textColor="#333333"
+                    android:textColorHint="#cfcece"
+                    android:textSize="17sp" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <Button
+            android:id="@+id/login_loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="12.5%w"
+            app:layout_marginLeftPercent="8.33%w"
+            app:layout_marginRightPercent="8.33%w"
+            app:layout_marginTopPercent="5%w"
+            android:background="@drawable/btn_login_selector"
+            android:gravity="center"
+            android:text="@string/login_login"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="8.33%w"
+            app:layout_marginRightPercent="8.33%w"
+            app:layout_marginTopPercent="5%w" >
+
+            <TextView
+                android:id="@+id/login_fogot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_fogotpsd_bg"
+                android:gravity="center"
+                android:text="@string/login_fogotpsd"
+                android:textColor="#dbdbdb"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/login_regist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/login_fogotpsd_bg"
+                android:gravity="center"
+                android:text="@string/login_regist"
+                android:textColor="#dbdbdb"
+                android:textSize="13sp" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_marginTopPercent="35.55%w"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <Button
+                android:id="@+id/login_wchat_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_wchat_selector" />
+
+            <Button
+                android:id="@+id/login_weibo_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="18%w"
+                android:background="@drawable/btn_weibo_selector" />
+
+            <Button
+                android:id="@+id/login_qq_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="18%w"
+                android:background="@drawable/btn_qq_selector" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</mobi.jzcx.android.core.percent.PercentRelativeLayout>

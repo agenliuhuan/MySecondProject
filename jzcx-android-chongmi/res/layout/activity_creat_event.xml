@@ -1,0 +1,375 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/createvent_title"
+        layout="@layout/comm_title_bar" />
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/createvent_title"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            app:layout_marginTopPercent="5%w"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/creat_event_seticonRL"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="17.77%w"
+            android:background="@drawable/on_item_selected" >
+
+            <ImageView
+                android:id="@+id/creat_event_seticon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="5.8%w"
+                app:layout_marginLeftPercent="3.3%w"
+                app:layout_widthPercent="5.8%w"
+                android:background="@drawable/event_seticon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/creat_event_seticon"
+                app:layout_marginLeftPercent="2%w"
+                android:text="@string/createevent_seticon"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/creat_event_seticon_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="3.33%w"
+                android:background="@drawable/account_next_img" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/creat_event_seticon_image"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/creat_event_seticon_next"
+                app:layout_heightPercent="11.39%w"
+                app:layout_marginRightPercent="3%w"
+                app:layout_widthPercent="11.39%w"
+                fresco:placeholderImage="@drawable/account_default_head" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            app:layout_marginTopPercent="5%w"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/creat_event_titleRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="13.6%w"
+            android:background="@drawable/on_item_selected" >
+
+            <ImageView
+                android:id="@+id/creat_event_title_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="5.8%w"
+                app:layout_marginLeftPercent="3.3%w"
+                app:layout_widthPercent="5.8%w"
+                android:background="@drawable/event_title" />
+
+            <TextView
+                android:id="@+id/creat_event_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/creat_event_title_icon"
+                app:layout_marginLeftPercent="2%w"
+                android:text="@string/createevent_titletext"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/creat_event_title_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/creat_event_title_tv"
+                app:layout_marginLeftPercent="5.5%w"
+                android:text="@string/createevent_titleedit"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/creat_event_title_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="4%w"
+                app:layout_marginRightPercent="5%w"
+                app:layout_widthPercent="2%w"
+                android:background="@drawable/account_next_img" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            app:layout_marginLeftPercent="10%w"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/creat_event_dateRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="13.6%w"
+            android:background="@drawable/on_item_selected" >
+
+            <ImageView
+                android:id="@+id/creat_event_date_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3.33%w"
+                android:background="@drawable/event_date" />
+
+            <TextView
+                android:id="@+id/creat_event_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/creat_event_date_icon"
+                app:layout_marginLeftPercent="2%w"
+                android:text="@string/createevent_datetext"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/creat_event_date_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/creat_event_date_tv"
+                app:layout_marginLeftPercent="5.5%w"
+                android:text="@string/createevent_birthdayhint"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/creat_event_date_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="4%w"
+                app:layout_marginRightPercent="5%w"
+                app:layout_widthPercent="2%w"
+                android:background="@drawable/account_next_img" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            app:layout_marginLeftPercent="10%w"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/creat_event_locationRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="13.6%w"
+            android:background="@drawable/on_item_selected" >
+
+            <ImageView
+                android:id="@+id/creat_event_location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="5.8%w"
+                app:layout_marginLeftPercent="3.3%w"
+                app:layout_widthPercent="5.8%w"
+                android:background="@drawable/event_location" />
+
+            <TextView
+                android:id="@+id/creat_event_location_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/creat_event_location_icon"
+                app:layout_marginLeftPercent="2%w"
+                android:text="@string/createevent_locationtext"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/creat_event_location_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="4%w"
+                app:layout_marginRightPercent="5%w"
+                app:layout_widthPercent="2%w"
+                android:background="@drawable/account_next_img" />
+
+            <TextView
+                android:id="@+id/creat_event_location_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/creat_event_location_next"
+                android:layout_toRightOf="@+id/creat_event_location_tv"
+                app:layout_marginLeftPercent="5.5%w"
+                app:layout_marginRightPercent="3.33%w"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/createevent_locationedithint"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            app:layout_marginLeftPercent="10%w"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/creat_event_mebernumRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="13.6%w"
+            android:background="@drawable/on_item_selected" >
+
+            <ImageView
+                android:id="@+id/creat_event_mebernum_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="5.8%w"
+                app:layout_marginLeftPercent="3.3%w"
+                app:layout_widthPercent="5.8%w"
+                android:background="@drawable/event_mebernum" />
+
+            <TextView
+                android:id="@+id/creat_event_mebernum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/creat_event_mebernum_icon"
+                app:layout_marginLeftPercent="2%w"
+                android:text="@string/createevent_mebernumtext"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/creat_event_mebernum_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/creat_event_mebernum_tv"
+                app:layout_marginLeftPercent="5.5%w"
+                android:text="@string/createevent_birthdayhint"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/creat_event_mebernum_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="4%w"
+                app:layout_marginRightPercent="5%w"
+                app:layout_widthPercent="2%w"
+                android:background="@drawable/account_next_img" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            app:layout_marginLeftPercent="10%w"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/creat_event_descRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="13.6%w"
+            android:background="@drawable/on_item_selected" >
+
+            <ImageView
+                android:id="@+id/creat_event_desc_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="5.8%w"
+                app:layout_marginLeftPercent="3.3%w"
+                app:layout_widthPercent="5.8%w"
+                android:background="@drawable/event_desc" />
+
+            <TextView
+                android:id="@+id/creat_event_desc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/creat_event_desc_icon"
+                app:layout_marginLeftPercent="2%w"
+                android:text="@string/createevent_desctext"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/creat_event_desc_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="4%w"
+                app:layout_marginRightPercent="5%w"
+                app:layout_widthPercent="2%w"
+                android:background="@drawable/account_next_img" />
+
+            <TextView
+                android:id="@+id/creat_event_desc_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/creat_event_desc_next"
+                android:layout_toRightOf="@+id/creat_event_desc_tv"
+                app:layout_marginLeftPercent="5.5%w"
+                app:layout_marginRightPercent="3.33%w"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/eventdesc_hint"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</RelativeLayout>

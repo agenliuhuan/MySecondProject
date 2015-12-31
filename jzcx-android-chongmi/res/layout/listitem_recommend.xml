@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/recommend_avatar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:layout_heightPercent="11.39%w"
+        app:layout_marginLeftPercent="3.33%w"
+        app:layout_widthPercent="11.39%w"
+        fresco:placeholderImage="@drawable/avatar_default_image" />
+
+    <ImageView
+        android:id="@+id/recommend_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:layout_marginRightPercent="3.33%w"
+        android:src="@drawable/attention_noselect" />
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_toLeftOf="@+id/recommend_select"
+        android:layout_toRightOf="@id/recommend_avatar"
+        app:layout_heightPercent="17.78%w"
+        app:layout_marginLeftPercent="2.5%w"
+        app:layout_marginRightPercent="3.33%w" >
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="3.33%w" >
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:id="@+id/recommend_contentLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <mobi.jzcx.android.core.percent.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/recommend_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#444444"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/recommend_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_marginLeftPercent="0.8%w"
+                        android:src="@drawable/sex_lady" />
+                </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+                <mobi.jzcx.android.core.percent.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_marginTopPercent="1.08%w"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/distance" />
+
+                    <TextView
+                        android:id="@+id/recommend_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_marginLeftPercent="1.39%w"
+                        android:textColor="#aaaaaa"
+                        android:textSize="12sp" />
+                </mobi.jzcx.android.core.percent.PercentLinearLayout>
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <mobi.jzcx.android.chongmi.view.HorizontalListView
+            android:id="@+id/recommend_pet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="60%w"
+            app:layout_marginRightPercent="3.33%w"
+            android:cacheColorHint="@color/transparent"
+            android:listSelector="@color/transparent" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+</mobi.jzcx.android.core.percent.PercentRelativeLayout>

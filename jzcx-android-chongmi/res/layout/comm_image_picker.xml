@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/image_picker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_black_transparent_background"
+    android:orientation="vertical" >
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:id="@+id/image_picker_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_marginRightPercent="3.3%w"
+            android:background="@drawable/imagepicker_btnbg"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_image_picker_snapshot"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                app:layout_heightPercent="12.2%w"
+                android:background="@drawable/transparent"
+                android:gravity="center"
+                android:text="@string/registeover_image_btn_snapshot"
+                android:textColor="@drawable/imagepicker_text_color_selector"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+
+            <Button
+                android:id="@+id/btn_image_picker_album"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                app:layout_heightPercent="12.2%w"
+                android:background="@drawable/transparent"
+                android:gravity="center"
+                android:text="@string/registeover_image_btn_album"
+                android:textColor="@drawable/imagepicker_text_color_selector"
+                android:textSize="15sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <Button
+            android:id="@+id/btn_image_picker_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="12.2%w"
+            app:layout_marginBottomPercent="3.3%w"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_marginRightPercent="3.3%w"
+            app:layout_marginTopPercent="2.2%w"
+            android:background="@drawable/imagepicker_btnbg"
+            android:gravity="center"
+            android:text="@string/registeover_image_btn_cancel"
+            android:textColor="@drawable/imagepicker_text_color_selector"
+            android:textSize="15sp" />
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</mobi.jzcx.android.core.percent.PercentRelativeLayout>

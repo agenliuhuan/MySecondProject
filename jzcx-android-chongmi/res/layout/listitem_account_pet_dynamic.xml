@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        app:layout_heightPercent="23.6%w"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/account_dynamic_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="19.16%w"
+            app:layout_marginLeftPercent="3.33%w"
+            app:layout_widthPercent="19.16%w"
+            android:scaleType="centerCrop" />
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="3.33%w"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/account_dynamic_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/account_dynamic_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="2.8%w"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

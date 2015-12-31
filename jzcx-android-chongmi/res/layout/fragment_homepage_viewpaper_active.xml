@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_home_active"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="13.33%w"
+        android:background="#ebeced" >
+
+        <TextView
+            android:id="@+id/activity_serchCancelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="3.5%w"
+            android:text="@string/btn_cancel"
+            android:textColor="#ff6600"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <mobi.jzcx.android.chongmi.view.ClearEditText
+            android:id="@+id/activity_serchEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/activity_serchCancelTv"
+            app:layout_heightPercent="9.44%w"
+            app:layout_marginLeftPercent="3.33%w"
+            app:layout_marginRightPercent="3.33%w"
+            android:background="@drawable/search_edit"
+            android:drawableLeft="@drawable/search"
+            android:hint="@string/active_search"
+            android:inputType="text"
+            android:maxLength="8"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/activity_serchLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="9.44%w"
+            app:layout_marginLeftPercent="3.33%w"
+            app:layout_marginRightPercent="3.33%w"
+            android:background="@drawable/search_edit"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/active_search"
+                android:textColor="#a6a6a6"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lv_active_headerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_marginTopPercent="2.7%w"
+            android:text="@string/active_people"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/lv_active_noresultTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            app:layout_marginTopPercent="38.89%w"
+            android:text="@string/active_search_noresult"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <mobi.jzcx.android.core.view.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/refresh_active"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/refresh_head" />
+
+            <mobi.jzcx.android.chongmi.view.CanPullListView
+                android:id="@+id/lv_active"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#d8d8d8"
+                android:dividerHeight="1px"
+                android:listSelector="@drawable/on_item_selected" />
+
+            <include layout="@layout/load_more" />
+        </mobi.jzcx.android.core.view.pulltorefresh.PullToRefreshLayout>
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

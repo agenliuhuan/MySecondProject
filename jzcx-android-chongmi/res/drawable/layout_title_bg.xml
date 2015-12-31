@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?> 
+            <!-- <gradient android:startColor="#000000" android:endColor="#ffc2b7" 
+                 android:angle="360" /> 渐变
+             <solid android:color="#00000000" />填充 
+             <stroke android:width="1dip" android:color="#FFFFFFFF" />边框 
+             <corners android:radius="2dp" />四个圆角 
+              <padding android:left="10dp" android:top="10dp" 
+                 android:right="10dp" android:bottom="10dp" />
+     </shape>-->
+     <shape xmlns:android="http://schemas.android.com/apk/res/android"> 
+            <!-- <gradient android:startColor="#000000" android:endColor="#ffc2b7" 
+                 android:angle="360" /> 渐变-->
+             <solid android:color="#dd5900" /><!-- 填充 --> 
+             <corners android:radius="50dp" />
+             <stroke android:width="2dip" android:color="#00000000" /><!-- 边框 -->
+     </shape>

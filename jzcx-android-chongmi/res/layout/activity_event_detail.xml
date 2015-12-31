@@ -1,0 +1,335 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/event_detailMainRL"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background_color" >
+
+    <include
+        android:id="@+id/event_detail_titlebar"
+        layout="@layout/comm_title_bar" />
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/event_detail_titlebar" >
+
+        <Button
+            android:id="@+id/event_detail_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:layout_heightPercent="12.2%w"
+            app:layout_marginPercent="5%w"
+            android:background="@drawable/event_joinbtn_selector"
+            android:text="@string/eventdetail_joinevent"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/event_detail_join" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <mobi.jzcx.android.core.percent.PercentLinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_marginTopPercent="5%w"
+                        android:background="#d8d8d8" />
+
+                    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                        android:id="@+id/event_detail_member"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_heightPercent="17.78%w"
+                        android:background="#ffffff" >
+
+                        <ImageView
+                            android:id="@+id/event_detail_group_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            app:layout_marginLeftPercent="3.33%w"
+                            android:background="@drawable/event_mebers" />
+
+                        <TextView
+                            android:id="@+id/creat_event_group_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/event_detail_group_icon"
+                            app:layout_marginLeftPercent="2%w"
+                            android:text="@string/eventdetail_group"
+                            android:textColor="#333333"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/creat_event_title_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:layout_marginRightPercent="5%w"
+                            android:background="@drawable/account_next_img" />
+
+                        <mobi.jzcx.android.chongmi.view.HorizontalListView
+                            android:id="@+id/event_detail_meberList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/creat_event_title_next"
+                            android:layout_toRightOf="@+id/creat_event_group_tv"
+                            app:layout_heightPercent="11.4%w"
+                            app:layout_marginLeftPercent="5.5%w"
+                            app:layout_marginRightPercent="3.33%w"
+                            android:cacheColorHint="@color/transparent"
+                            android:divider="@color/transparent"
+                            android:headerDividersEnabled="false"
+                            android:listSelector="@color/transparent"
+                            android:scrollbars="none" />
+                    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#d8d8d8" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_marginTopPercent="5%w"
+                        android:background="#d8d8d8" />
+
+                    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                        android:id="@+id/event_detail_sj"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_heightPercent="13.6%w"
+                        android:background="#ffffff" >
+
+                        <ImageView
+                            android:id="@+id/event_detail_date_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            app:layout_marginLeftPercent="3.33%w"
+                            android:background="@drawable/event_date" />
+
+                        <TextView
+                            android:id="@+id/creat_event_date_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/event_detail_date_icon"
+                            app:layout_marginLeftPercent="2%w"
+                            android:text="@string/eventdetail_datetext"
+                            android:textColor="#333333"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/event_detail_date_edt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/creat_event_date_tv"
+                            app:layout_marginLeftPercent="5.5%w"
+                            android:textColor="#999999"
+                            android:textSize="14sp" />
+                    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_marginLeftPercent="10%w"
+                        android:background="#d8d8d8" />
+
+                    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                        android:id="@+id/event_detail_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff" >
+
+                        <ImageView
+                            android:id="@+id/event_detail_location_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_marginLeftPercent="3.33%w"
+                            app:layout_marginTopPercent="4.8%w"
+                            android:background="@drawable/event_location" />
+
+                        <TextView
+                            android:id="@+id/creat_event_location_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/event_detail_location_icon"
+                            app:layout_marginLeftPercent="2%w"
+                            app:layout_marginTopPercent="5%w"
+                            android:text="@string/eventdetail_locationtext"
+                            android:textColor="#333333"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/event_detail_location_edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/creat_event_location_tv"
+                            app:layout_marginLeftPercent="5.5%w"
+                            app:layout_marginRightPercent="4.16%w"
+                            app:layout_marginTopPercent="5%w"
+                            android:textColor="#999999"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_below="@+id/event_detail_location_edt"
+                            app:layout_marginLeftPercent="10%w"
+                            app:layout_marginTopPercent="4.16%w"
+                            android:background="#d8d8d8" />
+                    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+                    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                        android:id="@+id/event_detail_mebernum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_heightPercent="13.6%w"
+                        android:background="#ffffff" >
+
+                        <ImageView
+                            android:id="@+id/event_detail_mebernum_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            app:layout_marginLeftPercent="3.33%w"
+                            android:background="@drawable/event_mebernum" />
+
+                        <TextView
+                            android:id="@+id/creat_event_mebernum_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/event_detail_mebernum_icon"
+                            app:layout_marginLeftPercent="2%w"
+                            android:text="@string/eventdetail_mebernumtext"
+                            android:textColor="#333333"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/event_detail_mebernum_edt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/creat_event_mebernum_tv"
+                            app:layout_marginLeftPercent="5.5%w"
+                            android:textColor="#999999"
+                            android:textSize="14sp" />
+                    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_marginLeftPercent="10%w"
+                        android:background="#d8d8d8" />
+
+                    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                        android:id="@+id/event_detail_intro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff" >
+
+                        <ImageView
+                            android:id="@+id/event_detail_intro_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_marginLeftPercent="3.33%w"
+                            app:layout_marginTopPercent="4.8%w"
+                            android:background="@drawable/event_desc" />
+
+                        <TextView
+                            android:id="@+id/creat_event_intro_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/event_detail_intro_icon"
+                            app:layout_marginLeftPercent="2%w"
+                            app:layout_marginTopPercent="5%w"
+                            android:text="@string/eventdetail_desctext"
+                            android:textColor="#333333"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/event_detail_intro_edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/creat_event_intro_tv"
+                            app:layout_marginLeftPercent="5.5%w"
+                            app:layout_marginRightPercent="4.16%w"
+                            app:layout_marginTopPercent="5%w"
+                            android:textColor="#999999"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_below="@+id/event_detail_intro_edt"
+                            app:layout_marginLeftPercent="10%w"
+                            app:layout_marginTopPercent="4.16%w"
+                            android:background="#d8d8d8" />
+                    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+                    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                        android:id="@+id/event_detail_dd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_heightPercent="13.6%w"
+                        android:background="#ffffff" >
+
+                        <ImageView
+                            android:id="@+id/event_detail_createtime_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            app:layout_marginLeftPercent="3.33%w"
+                            android:background="@drawable/event_ctime" />
+
+                        <TextView
+                            android:id="@+id/creat_event_createtime_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/event_detail_createtime_icon"
+                            app:layout_marginLeftPercent="2%w"
+                            android:text="@string/eventdetail_createtimetext"
+                            android:textColor="#333333"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/event_detail_createtime_edt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/creat_event_createtime_tv"
+                            app:layout_marginLeftPercent="5.5%w"
+                            android:textColor="#999999"
+                            android:textSize="14sp" />
+                    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#d8d8d8" />
+                </mobi.jzcx.android.core.percent.PercentLinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+</RelativeLayout>

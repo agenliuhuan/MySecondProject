@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_home_attention"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" >
+
+    <mobi.jzcx.android.core.view.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_attention"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/refresh_head" />
+
+        <mobi.jzcx.android.core.view.stickylistheaders.StickyListHeadersListView
+            android:id="@+id/lv_attention"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/load_more" />
+    </mobi.jzcx.android.core.view.pulltorefresh.PullToRefreshLayout>
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:id="@+id/ll_home_no_attentionDynamic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4f4"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="18.33%w"
+            app:layout_widthPercent="18.33%w"
+            android:src="@drawable/homepage_noattentionimg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_marginTopPercent="3.33%w"
+            android:text="@string/attention_nodynamic"
+            android:textColor="#666666" />
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</mobi.jzcx.android.core.percent.PercentRelativeLayout>

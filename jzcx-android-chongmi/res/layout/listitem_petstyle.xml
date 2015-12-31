@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="13.61%w" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/petstyle_image"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="11.11%w"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_widthPercent="11.11%w"
+            fresco:placeholderImage="@drawable/avatar_default_image" />
+
+        <TextView
+            android:id="@+id/petstyle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/petstyle_image"
+            app:layout_marginLeftPercent="3.3%w"
+            android:text="name"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="4%w"
+            app:layout_marginRightPercent="5%w"
+            app:layout_widthPercent="2%w"
+            android:src="@drawable/account_next_img" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+</mobi.jzcx.android.core.percent.PercentRelativeLayout>

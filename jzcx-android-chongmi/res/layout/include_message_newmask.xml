@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message_layout_mask"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fffde1b6"
+    android:gravity="center"
+    android:visibility="gone" >
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        app:layout_heightPercent="13.6%w"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/layout_mask_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_chat_newmsg_alram" />
+
+        <TextView
+            android:id="@+id/layout_mask_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:layout_marginLeftPercent="6.6%w"
+            android:gravity="center_vertical"
+            android:text="@string/message_newmask_text"
+            android:textColor="#999999"
+            android:textSize="16.0sp" />
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

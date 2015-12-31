@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" >
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="17.78%w"
+        android:orientation="vertical" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/newim_Item_userimg"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="13.33%w"
+            app:layout_marginLeftPercent="3.33%w"
+            app:layout_widthPercent="13.33%w"
+            fresco:placeholderImage="@drawable/avatar_default_image" />
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/newim_Item_userimg"
+            app:layout_marginLeftPercent="3.33%w"
+            app:layout_marginRightPercent="3.33%w"
+            android:orientation="vertical" >
+
+            <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/newim_Item_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="name"
+                    android:textColor="#444444"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/newim_Item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="time"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+            </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+            <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="2.08%w" >
+
+                <TextView
+                    android:id="@+id/newim_Item_numtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:layout_marginRightPercent="3.33%w"
+                    android:background="@drawable/imitem_numtip"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/newim_Item_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/newim_Item_numtext"
+                    app:layout_marginRightPercent="3.33%w"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="this is content"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <ImageView
+            android:id="@+id/newim_Item_acceptBtn"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="7%w"
+            app:layout_marginRightPercent="3.33%w"
+            app:layout_widthPercent="14%w"
+            android:background="@drawable/accept_btn_selector" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+</mobi.jzcx.android.core.percent.PercentRelativeLayout>

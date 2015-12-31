@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_heightPercent="13.33%w"
+        android:background="#ff6600"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_ttb_title"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:id="@+id/hardwareRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="30.55%w"
+        app:layout_marginLeftPercent="3.33%w"
+        app:layout_marginRightPercent="3.33%w"
+        app:layout_marginTopPercent="5.41%w"
+        android:background="@drawable/on_item_selected"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/hardware_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="3.33%w"
+            android:src="@drawable/hardwareimg" />
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/hardware_img"
+            app:layout_marginLeftPercent="4.86%w"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hardware_title"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/hardware_updatetv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="4.16%w"
+                android:text="@string/hardware_update"
+                android:textColor="#888888"
+                android:textSize="13sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="5%w"
+            android:src="@drawable/account_next_img" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:id="@+id/AnswerRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="30.55%w"
+        app:layout_marginLeftPercent="3.33%w"
+        app:layout_marginRightPercent="3.33%w"
+        app:layout_marginTopPercent="5%w"
+        android:background="@drawable/on_item_selected"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/answerImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="3.33%w"
+            android:src="@drawable/chongmi_questionimg" />
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/answerImg"
+            app:layout_marginLeftPercent="4.86%w"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_answertv"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="4.16%w"
+                android:text="@string/main_answertext"
+                android:textColor="#888888"
+                android:textSize="13sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="5%w"
+            android:src="@drawable/account_next_img" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background_color"
+    android:orientation="vertical" >
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:id="@+id/accountcenter_actionLL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="16.4%w"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:id="@+id/accountcenter_messageLL"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            app:layout_heightPercent="9%w"
+            app:layout_widthPercent="33.3%w"
+            android:background="@drawable/layout_account_message_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="5%w"
+                android:text="@string/account_center_message"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:id="@+id/accountcenter_attentionLL"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            app:layout_heightPercent="9%w"
+            app:layout_widthPercent="33.3%w"
+            android:background="@drawable/layout_account_attention_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/accountcenter_attentionimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_attention" />
+
+            <TextView
+                android:id="@+id/accountcenter_attentiontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="5%w"
+                android:text="@string/account_center_attention"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#d8d8d8" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        app:layout_heightPercent="5%w" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#d8d8d8" />
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:id="@+id/accountcenter_havepetLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <mobi.jzcx.android.core.percent.PercentLinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_heightPercent="9.44%w"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        app:layout_widthPercent="3.33%w" />
+
+                    <TextView
+                        android:id="@+id/accountcenter_petTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/account_center_petnum"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+                </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#d8d8d8" />
+
+                <ListView
+                    android:id="@+id/accountcenter_petlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="#d8d8d8"
+                    android:dividerHeight="1px"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="true"
+                    android:headerDividersEnabled="true"
+                    android:listSelector="@drawable/on_item_selected"
+                    android:scrollbars="none" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#d8d8d8" />
+
+                <TextView
+                    android:id="@+id/accountcenter_morepet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_heightPercent="9.44%w"
+                    android:gravity="center"
+                    android:text="@string/account_center_morepet"
+                    android:textColor="#444444"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                app:layout_heightPercent="5%w" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <mobi.jzcx.android.core.percent.PercentLinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_heightPercent="9.44%w"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        app:layout_widthPercent="3.33%w" />
+
+                    <TextView
+                        android:id="@+id/accountcenter_dynamicTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/account_center_dynamic"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+                </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#d8d8d8" />
+
+                <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ListView
+                        android:id="@+id/accountcenter_petdynamiclist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="@color/transparent"
+                        android:divider="#d8d8d8"
+                        android:dividerHeight="1px"
+                        android:fadingEdge="none"
+                        android:fastScrollEnabled="true"
+                        android:headerDividersEnabled="true"
+                        android:listSelector="@drawable/on_item_selected"
+                        android:scrollbars="none" />
+
+                    <mobi.jzcx.android.core.percent.PercentLinearLayout
+                        android:id="@+id/accountcenter_dynamicEmptyLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        app:layout_heightPercent="20%w"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/accountcenter_dymincempty_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/accountpetcenter_emptytv"
+                            android:textColor="#c3c3c3"
+                            android:textSize="15sp" />
+                    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+                </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:id="@+id/accountcenter_petEmptyLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/accountcenter_petempty_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="8.33%w"
+                android:text="@string/accountpetcenter_petemptytv"
+                android:textColor="#c3c3c3"
+                android:textSize="15sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

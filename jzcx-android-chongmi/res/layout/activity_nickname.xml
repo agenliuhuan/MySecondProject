@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlebar_nickname"
+        layout="@layout/comm_title_bar" />
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="5%w"
+            android:background="#f4f4f4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.chongmi.view.ClearEditText
+            android:id="@+id/edt_nickname_new"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.61%w"
+            app:layout_marginLeftPercent="3.33%w"
+            app:layout_marginRightPercent="3.33%w"
+            android:background="@color/transparent"
+            android:hint="@string/nickname_edittext"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="#444444"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</LinearLayout>

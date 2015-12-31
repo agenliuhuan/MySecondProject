@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title_bar" />
+
+    <mobi.jzcx.android.core.view.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_zanlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/refresh_head" />
+
+        <mobi.jzcx.android.chongmi.view.CanPullListView
+            android:id="@+id/lv_zan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:cacheColorHint="@color/transparent"
+            android:divider="#d8d8d8"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:listSelector="@drawable/on_item_selected"
+            android:scrollbars="none" />
+
+        <include layout="@layout/load_more" />
+    </mobi.jzcx.android.core.view.pulltorefresh.PullToRefreshLayout>
+
+</LinearLayout>

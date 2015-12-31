@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:id="@+id/title_all"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        app:layout_heightPercent="13.33%w"
+        android:background="#ff6600" >
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/title_leftRL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="13%w" >
+
+            <ImageView
+                android:id="@+id/leftbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_titlebar_left_normal" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/title_rightRL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            app:layout_widthPercent="13%w" >
+
+            <ImageView
+                android:id="@+id/rightbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/rightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="5%w"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:textColor="@drawable/btn_text_color_selector"
+            android:textSize="16sp" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+</mobi.jzcx.android.core.percent.PercentRelativeLayout>

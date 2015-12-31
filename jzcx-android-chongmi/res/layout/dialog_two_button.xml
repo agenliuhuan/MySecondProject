@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_widthPercent="83.3%w"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginPercent="8.8%w"
+            android:gravity="left|top"
+            android:lineSpacingExtra="10px"
+            android:text="@string/dialog_title_tip"
+            android:textColor="@color/dialog_content_color"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="15%w"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_dialog_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_dialog_left_bg_selector"
+                android:gravity="center"
+                android:text="@string/btn_cancel"
+                android:textColor="@drawable/btn_dialog_textcolor"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#d8d8d8" />
+
+            <Button
+                android:id="@+id/btn_dialog_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_dialog_right_bg_selector"
+                android:gravity="center"
+                android:text="@string/btn_confirm"
+                android:textColor="@drawable/btn_dialog_textcolor"
+                android:textSize="14sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="16.39%w" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/centerpet_image"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="11.39%w"
+            app:layout_marginLeftPercent="3.33%w"
+            app:layout_widthPercent="11.39%w"
+            fresco:placeholderImage="@drawable/avatar_default_image" />
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/centerpet_image"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/centerpet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="3.33%w"
+                android:text="name"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/centerpet_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="3.33%w"
+                android:background="@drawable/pet_bitch" />
+
+            <TextView
+                android:id="@+id/centerpet_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="2%w"
+                android:background="@drawable/home_pet_type"
+                android:gravity="center"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:textColor="#3fd3a0"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/centerpet_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="2.8%w"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

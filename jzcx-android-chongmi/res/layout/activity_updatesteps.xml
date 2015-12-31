@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#727476"
+    android:orientation="vertical" >
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        app:layout_heightPercent="13%w" >
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/updatesteps_title_leftRL"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            app:layout_heightPercent="13%w"
+            app:layout_widthPercent="13%w" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_titlebar_left_normal" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/updatesteps_title_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="2%w"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/updatesteps_bluetoothimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bluetoothimg" />
+
+        <TextView
+            android:id="@+id/updatesteps_statusTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updatesteps_bluetoothimg"
+            android:layout_centerHorizontal="true"
+            app:layout_marginLeftPercent="5%w"
+            android:text="@string/petstepsnum_updatescaning"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/updatesteps_cancelTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:layout_marginBottomPercent="5%w"
+            android:text="@string/petstepsnum_cancel"
+            android:textColor="#fbab0c"
+            android:textSize="15sp" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

@@ -1,0 +1,336 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title_bar" />
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/layout_setting_password"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.6%w"
+            app:layout_marginTopPercent="5%w"
+            android:background="@drawable/on_item_selected" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+
+            <ImageView
+                android:id="@+id/setting_password_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3%w"
+                android:src="@drawable/setting_resetpsd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/setting_password_img"
+                app:layout_marginLeftPercent="1.6%w"
+                android:text="@string/setting_password"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/password_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="3.3%w"
+                android:src="@drawable/account_next_img" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#d8d8d8" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/layout_setting_clearcache"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.6%w"
+            app:layout_marginTopPercent="5%w"
+            android:background="@drawable/on_item_selected" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+
+            <ImageView
+                android:id="@+id/setting_clearcache_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3%w"
+                android:src="@drawable/setting_clearcache" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/setting_clearcache_img"
+                app:layout_marginLeftPercent="1.6%w"
+                android:text="@string/setting_clearcache"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/clearcache_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="3.3%w"
+                android:src="@drawable/account_next_img" />
+
+            <TextView
+                android:id="@+id/tv_cache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/clearcache_next"
+                app:layout_marginRightPercent="4.8%w"
+                android:textColor="#444444"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#d8d8d8" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/layout_setting_good"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.6%w"
+            app:layout_marginTopPercent="5%w"
+            android:background="@drawable/on_item_selected" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+
+            <ImageView
+                android:id="@+id/setting_good_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3%w"
+                android:src="@drawable/setting_givegood" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/setting_good_img"
+                app:layout_marginLeftPercent="1.6%w"
+                android:text="@string/setting_good"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/good_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="3.3%w"
+                android:src="@drawable/account_next_img" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#d8d8d8" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/layout_setting_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.6%w"
+            android:background="@drawable/on_item_selected" >
+
+            <ImageView
+                android:id="@+id/setting_feedback_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3%w"
+                android:src="@drawable/setting_report" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/setting_feedback_img"
+                app:layout_marginLeftPercent="1.6%w"
+                android:text="@string/setting_feeback"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="3.3%w"
+                android:src="@drawable/account_next_img" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#d8d8d8" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/layout_setting_version"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.6%w"
+            android:background="@drawable/on_item_selected" >
+
+            <ImageView
+                android:id="@+id/setting_version_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3%w"
+                android:src="@drawable/setting_checkupdate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/setting_version_img"
+                app:layout_marginLeftPercent="1.6%w"
+                android:text="@string/setting_version"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/version_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="3.3%w"
+                android:src="@drawable/account_next_img" />
+
+            <TextView
+                android:id="@+id/version_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/version_next"
+                android:textColor="#6f6f6f"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#d8d8d8" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/layout_setting_about"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.6%w"
+            android:background="@drawable/on_item_selected" >
+
+            <ImageView
+                android:id="@+id/setting_about_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3%w"
+                android:src="@drawable/setting_about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/setting_about_img"
+                app:layout_marginLeftPercent="1.6%w"
+                android:text="@string/setting_about"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="3.3%w"
+                android:src="@drawable/account_next_img" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#d8d8d8" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/layout_setting_exit"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.6%w"
+            app:layout_marginTopPercent="5%w"
+            android:background="@drawable/on_item_selected" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+
+            <ImageView
+                android:id="@+id/setting_exit_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3%w"
+                android:src="@drawable/setting_exit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/setting_exit_img"
+                app:layout_marginLeftPercent="1.6%w"
+                android:text="@string/setting_exit"
+                android:textColor="#f64768"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#d8d8d8" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</LinearLayout>

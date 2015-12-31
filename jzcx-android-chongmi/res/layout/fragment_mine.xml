@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background_color" >
+
+    <LinearLayout
+        android:id="@+id/mine_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_heightPercent="13.33%w"
+        android:background="#ff6600"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_title"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mine_titlebar"
+        android:orientation="vertical" >
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/Mine_accountRL"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_below="@+id/mine_titlebar"
+            app:layout_heightPercent="35.28%w"
+            android:background="#ffffff" >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/Mine_userimg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="20%w"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_widthPercent="20%w"
+                fresco:placeholderImage="@drawable/avatar_default_image" />
+
+            <TextView
+                android:id="@+id/Mine_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/Mine_userimg"
+                app:layout_marginLeftPercent="5%w"
+                android:text=""
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/Mine_nextimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="5%w"
+                android:src="@drawable/account_next_img" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+
+        <LinearLayout
+            android:id="@+id/Mine_attentionLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="14.16%w"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:id="@+id/Mine_attentionRL"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/attention_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#444444"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_marginLeftPercent="2.78%w"
+                    android:text="@string/mine_attention"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#d8d8d8" />
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:id="@+id/Mine_attentionedRL"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/attentioned_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#444444"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_marginLeftPercent="2.78%w"
+                    android:text="@string/mine_attentioned"
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            app:layout_marginTopPercent="5%w"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/Mine_MyPetRL"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.89%w"
+            android:background="#ffffff" >
+
+            <ImageView
+                android:id="@+id/MyPet_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3%w"
+                android:src="@drawable/mine_mypet_img" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="5%w"
+                android:src="@drawable/account_next_img" />
+
+            <TextView
+                android:id="@+id/Mine_MyPetTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/MyPet_img"
+                app:layout_marginLeftPercent="3%w"
+                android:text="@string/mine_mypet"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/Mine_SettingRL"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.89%w"
+            android:background="#ffffff" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                app:layout_marginLeftPercent="16%w"
+                android:background="#d8d8d8" />
+
+            <ImageView
+                android:id="@+id/Setting_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3%w"
+                android:src="@drawable/mine_setting_img" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="5%w"
+                android:src="@drawable/account_next_img" />
+
+            <TextView
+                android:id="@+id/Mine_SettingTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/Setting_img"
+                app:layout_marginLeftPercent="3%w"
+                android:text="@string/mine_setting"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</mobi.jzcx.android.core.percent.PercentRelativeLayout>

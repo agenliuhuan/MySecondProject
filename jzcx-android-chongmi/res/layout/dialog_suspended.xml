@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_heightPercent="81.11%w"
+        app:layout_widthPercent="87.5%w"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical" >
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="25.39%w"
+            android:background="#ff6600" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:layout_heightPercent="20%w"
+                app:layout_widthPercent="33.61%w"
+                android:src="@drawable/suspended_icon" />
+
+            <ImageView
+                android:id="@+id/closeimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:layout_marginRightPercent="2.68%w"
+                app:layout_marginTopPercent="2.78%w"
+                android:src="@drawable/suspended_close" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_marginLeftPercent="14.44%w"
+            app:layout_marginRightPercent="14.44%w"
+            app:layout_marginTopPercent="14.44%w"
+            android:gravity="center"
+            android:lineSpacingExtra="10px"
+            android:text="@string/dialog_suspend_text"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_marginTopPercent="14.44%w"
+            android:gravity="center"
+            android:text="@string/dialog_suspend_phone"
+            android:textColor="#ff6600"
+            android:textSize="17sp" />
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

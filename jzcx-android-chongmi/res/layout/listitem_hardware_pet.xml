@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="16.67%w"
+        android:background="#ffffff" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/hardwarepet_image"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="11.67%w"
+            app:layout_marginLeftPercent="3.33%w"
+            app:layout_widthPercent="11.67%w"
+            fresco:placeholderImage="@drawable/avatar_default_image" />
+
+        <TextView
+            android:id="@+id/hardwarepet_unbindtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="3.33%w"
+            android:text="@string/hardware_petlist_bind"
+            android:textColor="#ff6600"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/hardwarepet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/hardwarepet_unbindtv"
+            android:layout_toRightOf="@+id/hardwarepet_image"
+            app:layout_marginLeftPercent="3.33%w"
+            app:layout_marginRightPercent="3.33%w"
+            android:text="name"
+            android:textColor="#444444"
+            android:textSize="15sp" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

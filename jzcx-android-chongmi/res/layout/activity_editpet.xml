@@ -1,0 +1,320 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/comm_title_bar" />
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                app:layout_heightPercent="5%w"
+                android:background="#f4f4f4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+
+            <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                android:id="@+id/layout_editpet_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                app:layout_heightPercent="17.77%w"
+                android:background="@drawable/on_item_selected" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    app:layout_marginLeftPercent="4%w"
+                    android:text="@string/addpet_avatar"
+                    android:textColor="#444444"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/editpet_next"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:layout_heightPercent="4%w"
+                    app:layout_marginRightPercent="4%w"
+                    app:layout_widthPercent="2%w"
+                    android:src="@drawable/account_next_img" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_editpet_image"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/editpet_next"
+                    app:layout_heightPercent="11.39%w"
+                    app:layout_marginRightPercent="3%w"
+                    app:layout_widthPercent="11.39%w"
+                    fresco:placeholderImage="@drawable/avatar_default_image" />
+            </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                app:layout_heightPercent="5%w"
+                android:background="#f4f4f4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+
+            <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                android:id="@+id/layout_editpet_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                app:layout_heightPercent="13.61%w"
+                android:background="@drawable/on_item_selected" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    app:layout_marginLeftPercent="4%w"
+                    android:text="@string/editpet_nickname"
+                    android:textColor="#444444"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/nickname_next"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:layout_heightPercent="4%w"
+                    app:layout_marginRightPercent="4%w"
+                    app:layout_widthPercent="2%w"
+                    android:src="@drawable/account_next_img" />
+
+                <TextView
+                    android:id="@+id/tv_editpet_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/nickname_next"
+                    app:layout_marginRightPercent="3%w"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+            </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                app:layout_marginLeftPercent="4%w"
+                android:background="#d8d8d8" />
+
+            <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                android:id="@+id/layout_editpet_sex"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                app:layout_heightPercent="13.61%w"
+                android:background="@drawable/on_item_selected" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    app:layout_marginLeftPercent="4%w"
+                    android:text="@string/addpet_sex"
+                    android:textColor="#444444"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/sex_next"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:layout_heightPercent="4%w"
+                    app:layout_marginRightPercent="4%w"
+                    app:layout_widthPercent="2%w"
+                    android:src="@drawable/account_next_img" />
+
+                <TextView
+                    android:id="@+id/tv_editpet_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/sex_next"
+                    app:layout_marginRightPercent="3%w"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+            </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                app:layout_marginLeftPercent="4%w"
+                android:background="#d8d8d8" />
+
+            <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                android:id="@+id/layout_editpet_style"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                app:layout_heightPercent="13.61%w"
+                android:background="@drawable/on_item_selected" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    app:layout_marginLeftPercent="4%w"
+                    android:text="@string/addpet_style"
+                    android:textColor="#444444"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/style_next"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:layout_heightPercent="4%w"
+                    app:layout_marginRightPercent="4%w"
+                    app:layout_widthPercent="2%w"
+                    android:src="@drawable/account_next_img" />
+
+                <TextView
+                    android:id="@+id/tv_editpet_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/style_next"
+                    app:layout_marginRightPercent="3%w"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+            </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                app:layout_marginLeftPercent="4%w"
+                android:background="#d8d8d8" />
+
+            <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                android:id="@+id/layout_editpet_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                app:layout_heightPercent="13.61%w"
+                android:background="@drawable/on_item_selected" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    app:layout_marginLeftPercent="4%w"
+                    android:text="@string/addpet_birthday"
+                    android:textColor="#444444"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/birthday_next"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:layout_heightPercent="4%w"
+                    app:layout_marginRightPercent="4%w"
+                    app:layout_widthPercent="2%w"
+                    android:src="@drawable/account_next_img" />
+
+                <TextView
+                    android:id="@+id/tv_editpet_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/birthday_next"
+                    app:layout_marginRightPercent="3%w"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+            </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                app:layout_marginLeftPercent="4%w"
+                android:background="#d8d8d8" />
+
+            <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                android:id="@+id/layout_editpet_desc"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                app:layout_heightPercent="13.61%w"
+                android:background="@drawable/on_item_selected" >
+
+                <TextView
+                    android:id="@+id/intro_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    app:layout_marginLeftPercent="4%w"
+                    android:text="@string/addpet_desc"
+                    android:textColor="#444444"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/intro_next"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:layout_heightPercent="4%w"
+                    app:layout_marginRightPercent="4%w"
+                    app:layout_widthPercent="2%w"
+                    android:src="@drawable/account_next_img" />
+
+                <TextView
+                    android:id="@+id/tv_editpet_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/intro_next"
+                    android:layout_toRightOf="@+id/intro_image"
+                    app:layout_marginLeftPercent="3%w"
+                    app:layout_marginRightPercent="3%w"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+            </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

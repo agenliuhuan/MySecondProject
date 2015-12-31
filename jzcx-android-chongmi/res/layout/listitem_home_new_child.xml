@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <mobi.jzcx.android.core.percent.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="100%w" >
+
+        <mobi.jzcx.android.chongmi.ui.common.DecoratorViewPager
+            android:id="@+id/dynamic_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <mobi.jzcx.android.chongmi.ui.main.homepage.TVPageIndicator
+            android:id="@+id/dynamic_pageIndicator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            app:layout_heightPercent="5.8%w"
+            app:layout_marginBottomPercent="2.7%w"
+            app:layout_marginLeftPercent="4.1%w"
+            app:layout_widthPercent="13.3%w"
+            android:gravity="bottom|center_horizontal|left"
+            app:indicator_spacing="5dp"
+            app:indicator_type="fraction" />
+    </mobi.jzcx.android.core.percent.PercentFrameLayout>
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="7.2%w"
+        app:layout_marginTopPercent="3.3%w" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/dynamic_petimg"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="7.2%w"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_widthPercent="7.2%w" />
+
+        <TextView
+            android:id="@+id/dynamic_petname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/dynamic_petimg"
+            app:layout_marginLeftPercent="1.94%w"
+            android:text="小乖"
+            android:textColor="#444444"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/dynamic_petsex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/dynamic_petname"
+            app:layout_heightPercent="3%w"
+            app:layout_marginLeftPercent="1%w"
+            app:layout_widthPercent="3%w"
+            android:src="@drawable/pet_dog" />
+
+        <TextView
+            android:id="@+id/dynamic_pettype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/dynamic_petsex"
+            app:layout_heightPercent="4.17%w"
+            app:layout_marginLeftPercent="1%w"
+            android:background="@drawable/home_pet_type"
+            android:gravity="center"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:text="泰迪"
+            android:textColor="#3fd3a0"
+            android:textSize="9sp" />
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="3.33%w"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/picture_send_time" />
+
+            <TextView
+                android:id="@+id/dynamic_sendtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:layout_marginLeftPercent="0.5%w"
+                android:gravity="center"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+    <TextView
+        android:id="@+id/dynamic_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginLeftPercent="4.2%w"
+        app:layout_marginRightPercent="4.2%w"
+        app:layout_marginTopPercent="2.08%w"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:id="@+id/dynamic_zanlistRL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8.3%w"
+        app:layout_marginTopPercent="2.08%w" >
+
+        <TextView
+            android:id="@+id/dynamic_zan"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="8.3%w"
+            app:layout_marginLeftPercent="2.2%w"
+            app:layout_marginRightPercent="3.3%w"
+            app:layout_widthPercent="8.3%w"
+            android:background="@drawable/zan_more"
+            android:gravity="center"
+            android:textColor="#8d8d8d"
+            android:textSize="12sp" />
+
+        <mobi.jzcx.android.chongmi.view.HorizontalListView
+            android:id="@+id/dynamic_zan_userlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/dynamic_zan"
+            app:layout_marginLeftPercent="3.3%w"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8.3%w"
+        app:layout_marginTopPercent="2.08%w"
+        android:orientation="horizontal" >
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:id="@+id/dynamic_zanRL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_widthPercent="16.6%w"
+            android:background="@drawable/layout_comment_share_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/dynamic_zanimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_iszan" />
+
+            <TextView
+                android:id="@+id/dynamic_zantext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="2.2%w"
+                android:text="@string/dynamic_zan"
+                android:textColor="#8c8c8c"
+                android:textSize="12sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:id="@+id/dynamic_commentRL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/dynamic_zanRL"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_widthPercent="16.6%w"
+            android:background="@drawable/comment_share_default"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/comment_default" />
+
+            <TextView
+                android:id="@+id/dynamic_commentNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="2.2%w"
+                android:text="@string/dynamic_comment"
+                android:textColor="#8c8c8c"
+                android:textSize="12sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:id="@+id/dynamic_readedRl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/dynamic_commentRL"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_widthPercent="16.6%w"
+            android:background="@drawable/comment_share_default"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/read_default" />
+
+            <TextView
+                android:id="@+id/dynamic_readedNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="2.2%w"
+                android:text="@string/dynamic_readed"
+                android:textColor="#8c8c8c"
+                android:textSize="12sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <ImageView
+            android:id="@+id/dynamic_sharemoreimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:layout_heightPercent="8.33%w"
+            app:layout_marginRightPercent="3.3%w"
+            app:layout_widthPercent="11.11%w"
+            android:src="@drawable/main_shareimge_selector"
+            android:visibility="gone" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="4.1%w"
+        app:layout_marginTopPercent="2.2%w"
+        android:background="#f4f4f4" >
+    </View>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="14.7%w" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/dynamic_userimg"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="10%w"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_widthPercent="10%w"
+            fresco:placeholderImage="@drawable/avatar_default_image" />
+
+        <ImageView
+            android:id="@+id/dynamic_followbtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="7.5%w"
+            app:layout_marginRightPercent="3.3%w"
+            app:layout_widthPercent="14.5%w"
+            android:background="@drawable/btn_home_attention_selector"
+            android:focusable="false" />
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/dynamic_followbtn"
+            android:layout_toRightOf="@id/dynamic_userimg"
+            app:layout_marginLeftPercent="2.5%w"
+            app:layout_marginRightPercent="3.3%w"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dynamic_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#286eb3"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/dynamic_usersex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sex_man" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/distance" />
+
+                <TextView
+                    android:id="@+id/dynamic_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+</mobi.jzcx.android.core.percent.PercentRelativeLayout>

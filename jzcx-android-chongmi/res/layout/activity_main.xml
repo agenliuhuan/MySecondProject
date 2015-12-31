@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background_color" >
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:id="@+id/main_bottomLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="15%w"
+        android:background="#6ff1f1f1" >
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:id="@+id/main_bottom_homeLL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="20%w"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/main_nearly_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_nearly_click" />
+
+            <TextView
+                android:id="@+id/main_nearly_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="3%w"
+                android:text="@string/main_homepage"
+                android:textColor="#ff6600"
+                android:textSize="12sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:id="@+id/main_bottom_shoppingLL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/main_bottom_homeLL"
+            app:layout_widthPercent="20%w"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/main_cm_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_cm_selector" />
+
+            <TextView
+                android:id="@+id/main_cm_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_shopping"
+                android:textColor="@drawable/main_bottom_textselector"
+                android:textSize="12sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:id="@+id/main_bottom_mineLL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            app:layout_widthPercent="20%w"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/main_mine_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_mine_selector" />
+
+            <TextView
+                android:id="@+id/main_mine_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_mine"
+                android:textColor="@drawable/main_bottom_textselector"
+                android:textSize="12sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/main_bottom_newsLL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/main_bottom_mineLL"
+            app:layout_widthPercent="20%w"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/main_news_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_news_selector" />
+
+                <TextView
+                    android:id="@+id/main_news_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_news"
+                    android:textColor="@drawable/main_bottom_textselector"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/main_havenews_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:layout_marginRightPercent="30%w"
+                app:layout_marginTopPercent="10%w"
+                android:src="@drawable/setting_message_number" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_bottomLL" >
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/main_bottomLL"
+        android:background="#d8d8d8" />
+
+    <ImageView
+        android:id="@+id/main_bottom_editimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="18%w"
+        app:layout_marginBottomPercent="2%w"
+        app:layout_widthPercent="18%w"
+        android:background="@drawable/main_bottom_editbg"
+        android:scaleType="centerInside"
+        android:src="@drawable/main_bottom_editimg" />
+
+</mobi.jzcx.android.core.percent.PercentRelativeLayout>

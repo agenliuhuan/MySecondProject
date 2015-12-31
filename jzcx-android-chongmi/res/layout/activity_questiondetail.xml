@@ -1,0 +1,281 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/questiondetail_titlebar"
+        layout="@layout/comm_title_bar" />
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:id="@+id/questiondetail_inputRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="13.33%w" >
+
+            <EditText
+                android:id="@+id/questiondetail_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="9.44%w"
+                app:layout_marginLeftPercent="3.33%w"
+                app:layout_widthPercent="75.27%w"
+                android:background="@drawable/dynamic_edittext"
+                android:gravity="left|center_vertical"
+                android:hint="@string/main_questionofficial_edithint"
+                android:maxLength="1000"
+                android:paddingLeft="15px"
+                android:paddingRight="15px"
+                android:textColor="#444444"
+                android:textColorHint="#b0b0b0"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/questiondetail_sendtext"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="9.44%w"
+                app:layout_marginRightPercent="3.33%w"
+                app:layout_widthPercent="16.3%w"
+                android:background="@drawable/dynamic_send_selector"
+                android:text="@string/chatting_send"
+                android:textColor="@drawable/send_textselector"
+                android:textSize="13sp" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+    <mobi.jzcx.android.core.view.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/questiondetail_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/questiondetail_inputRL"
+        android:layout_below="@+id/questiondetail_titlebar" >
+
+        <include layout="@layout/refresh_head" />
+
+        <mobi.jzcx.android.chongmi.view.CanPullScrollView
+            android:id="@+id/questiondetail_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <mobi.jzcx.android.core.percent.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_marginTopPercent="5%w" >
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/questiondetail_useravatar"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_heightPercent="11.39%w"
+                            app:layout_marginLeftPercent="3.33%w"
+                            app:layout_widthPercent="11.39%w"
+                            fresco:placeholderImage="@drawable/avatar_default_image" />
+
+                        <TextView
+                            android:id="@+id/questiondetail_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/questiondetail_useravatar"
+                            app:layout_marginLeftPercent="3.33%w"
+                            android:text=""
+                            android:textColor="#555555"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/questiondetail_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            app:layout_marginRightPercent="3.33%w"
+                            android:text=""
+                            android:textColor="#b0b0b0"
+                            android:textSize="12sp" />
+                    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+                    <TextView
+                        android:id="@+id/questiondetail_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40px"
+                        app:layout_marginLeftPercent="3.33%w"
+                        app:layout_marginRightPercent="3.33%w"
+                        android:lineSpacingExtra="20px"
+                        android:text=""
+                        android:textColor="#101010"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/questiondetail_context"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        app:layout_marginLeftPercent="3.33%w"
+                        app:layout_marginRightPercent="3.33%w"
+                        android:lineSpacingExtra="20px"
+                        android:text=""
+                        android:textColor="#999999"
+                        android:textSize="15sp" />
+
+                    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            app:layout_marginRightPercent="3.33%w"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/question_comment" />
+
+                            <TextView
+                                android:id="@+id/questiondetail_commentNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="14px"
+                                android:text="5"
+                                android:textColor="#999999"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+                    <GridView
+                        android:id="@+id/questiondetail_grid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_heightPercent="23%w"
+                        app:layout_marginLeftPercent="3.33%w"
+                        app:layout_marginRightPercent="3.33%w"
+                        app:layout_marginTopPercent="5%w"
+                        android:listSelector="@color/transparent"
+                        android:numColumns="4" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_marginLeftPercent="3.33%w"
+                        app:layout_marginRightPercent="3.33%w"
+                        app:layout_marginTopPercent="5%w"
+                        android:background="#d8d8d8" />
+
+                    <mobi.jzcx.android.core.percent.PercentLinearLayout
+                        android:id="@+id/questiondetail_doctorLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_marginLeftPercent="3.33%w"
+                        app:layout_marginRightPercent="3.33%w"
+                        app:layout_marginTopPercent="5.83%w"
+                        android:background="@drawable/question_detail_official"
+                        android:orientation="vertical" >
+
+                        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_marginTopPercent="5%w" >
+
+                            <ImageView
+                                android:id="@+id/questiondetail_officialAvatar"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                app:layout_heightPercent="10%w"
+                                app:layout_marginLeftPercent="3.33%w"
+                                app:layout_widthPercent="10%w"
+                                android:src="@drawable/question_official_avatar" />
+
+                            <TextView
+                                android:id="@+id/questiondetail_officialName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/questiondetail_officialAvatar"
+                                app:layout_marginLeftPercent="3.33%w"
+                                android:text="@string/main_questionofficial_name"
+                                android:textColor="#ff6600"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/questiondetail_officialTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                app:layout_marginRightPercent="3.33%w"
+                                android:text=""
+                                android:textColor="#b0b0b0"
+                                android:textSize="12sp" />
+                        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+                        <TextView
+                            android:id="@+id/questiondetail_officialContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="26px"
+                            android:layout_marginTop="36px"
+                            app:layout_marginLeftPercent="3.33%w"
+                            app:layout_marginRightPercent="3.33%w"
+                            android:ellipsize="none"
+                            android:gravity="left"
+                            android:lineSpacingExtra="20px"
+                            android:maxLines="10"
+                            android:text=""
+                            android:textColor="#101010"
+                            android:textSize="15sp" />
+                    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_marginLeftPercent="3.33%w"
+                        app:layout_marginRightPercent="3.33%w"
+                        app:layout_marginTopPercent="5.83%w"
+                        android:background="#d8d8d8" />
+
+                    <ListView
+                        android:id="@+id/questiondetail_answerList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="#d8d8d8"
+                        android:dividerHeight="1px"
+                        android:listSelector="@drawable/on_item_selected" />
+                </mobi.jzcx.android.core.percent.PercentLinearLayout>
+            </LinearLayout>
+        </mobi.jzcx.android.chongmi.view.CanPullScrollView>
+
+        <include layout="@layout/load_more" />
+    </mobi.jzcx.android.core.view.pulltorefresh.PullToRefreshLayout>
+
+</RelativeLayout>

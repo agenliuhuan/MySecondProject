@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_marginTopPercent="5%w" >
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/answerdetail_userAvatar"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_heightPercent="10%w"
+                        app:layout_marginLeftPercent="3.33%w"
+                        app:layout_widthPercent="10%w" />
+
+                    <TextView
+                        android:id="@+id/answerdetail_userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/answerdetail_userAvatar"
+                        app:layout_marginLeftPercent="3.33%w"
+                        android:text=""
+                        android:textColor="#b0b0b0"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/answerdetail_Time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        app:layout_marginRightPercent="3.33%w"
+                        android:text=""
+                        android:textColor="#b0b0b0"
+                        android:textSize="12sp" />
+                </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+                <TextView
+                    android:id="@+id/answerdetail_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:layout_marginLeftPercent="16.66%w"
+                    app:layout_marginRightPercent="3.33%w"
+                    android:lineSpacingExtra="20px"
+                    android:text=""
+                    android:textColor="#444444"
+                    android:textSize="15sp" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

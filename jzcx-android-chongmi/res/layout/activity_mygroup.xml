@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background_color" >
+
+    <include
+        android:id="@+id/sysnews_titlebar"
+        layout="@layout/comm_title_bar" />
+
+    <mobi.jzcx.android.core.view.swipemenulistview.SwipeMenuListView
+        android:id="@+id/MyGroup_List"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sysnews_titlebar"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:divider="#d8d8d8"
+        android:dividerHeight="1px"
+        android:listSelector="@drawable/on_item_selected" />
+
+    <LinearLayout
+        android:id="@+id/empty_MyGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group_emptyimg" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/main_empty_notice" />
+    </LinearLayout>
+
+</RelativeLayout>

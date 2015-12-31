@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title_bar" />
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/pet_sexmanLL"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.6%w" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3.3%w"
+                android:text="@string/registeeditpet_choiceman"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/petsex_manImg"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="5%w"
+                app:layout_marginRightPercent="3.3%w"
+                app:layout_widthPercent="5%w"
+                android:background="@drawable/sexbtn_radio_on" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/pet_sexwomanLL"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.6%w" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3.3%w"
+                android:text="@string/registeeditpet_choicewoman"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/petsex_womanImg"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="5%w"
+                app:layout_marginRightPercent="3.3%w"
+                app:layout_widthPercent="5%w"
+                android:background="@drawable/sexbtn_radio_on"
+                android:visibility="invisible" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</LinearLayout>

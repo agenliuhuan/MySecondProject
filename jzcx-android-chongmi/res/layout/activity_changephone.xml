@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title_bar" />
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="11.11%w"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/setting_password_img"
+                app:layout_marginLeftPercent="3.33%w"
+                android:text="@string/changephone_oldphone"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/changephone_oldphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/setting_password_img"
+                app:layout_marginLeftPercent="2%w"
+                android:text=""
+                android:textColor="#444444"
+                android:textSize="13sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="13.61%w"
+            android:orientation="horizontal" >
+
+            <mobi.jzcx.android.chongmi.view.ClearEditText
+                android:id="@+id/changephone_newphone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_marginLeftPercent="3.33%w"
+                app:layout_marginRightPercent="3.33%w"
+                android:background="@color/transparent"
+                android:digits="@string/phone_digits_text"
+                android:hint="@string/registe_edt_phone"
+                android:inputType="phone"
+                android:textColor="#444444"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+
+        <mobi.jzcx.android.core.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.61%w"
+            android:orientation="horizontal" >
+
+            <mobi.jzcx.android.chongmi.view.ClearEditText
+                android:id="@+id/changephone_check"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                app:layout_marginLeftPercent="3.33%w"
+                app:layout_widthPercent="65%w"
+                android:background="@color/transparent"
+                android:hint="@string/changephone_vcode"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="#444444"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/changephone_resendBtn"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                app:layout_heightPercent="10%w"
+                app:layout_marginLeftPercent="3.33%w"
+                app:layout_widthPercent="23.33%w"
+                android:background="@drawable/btn_red_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/registe_tv_resend"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d8d8d8" />
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</LinearLayout>

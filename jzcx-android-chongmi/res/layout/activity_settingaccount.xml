@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_activity_background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title_bar" />
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/layout_settingaccount_password"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.6%w"
+            app:layout_marginTopPercent="5%w"
+            android:background="@drawable/on_item_selected" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+
+            <ImageView
+                android:id="@+id/settingaccount_password_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3%w"
+                android:src="@drawable/login_psdimg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/settingaccount_password_img"
+                app:layout_marginLeftPercent="1.6%w"
+                android:text="@string/settingaccount_password"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="3.3%w"
+                android:src="@drawable/account_next_img" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#d8d8d8" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:id="@+id/layout_settingaccount_clearcache"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13.6%w"
+            app:layout_marginTopPercent="5%w"
+            android:background="@drawable/on_item_selected" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d8d8d8" />
+
+            <ImageView
+                android:id="@+id/settingaccount_clearcache_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="3%w"
+                android:src="@drawable/login_phoneimg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/settingaccount_clearcache_img"
+                app:layout_marginLeftPercent="1.6%w"
+                android:text="@string/settingaccount_phone"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="3.3%w"
+                android:src="@drawable/account_next_img" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#d8d8d8" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</LinearLayout>

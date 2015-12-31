@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2013 The CCP project authors. All Rights Reserved.
+ 
+   Use of this source code is governed by a Beijing Speedtong Information Technology Co.,Ltd license
+   that can be found in the LICENSE file in the root of the web site.
+ 
+    				http://www.yuntongxun.com
+ 
+   An additional intellectual property rights grant can be found
+   in the file PATENTS.  All contributing project authors may
+   be found in the AUTHORS file in the root of the source tree.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CCPGroupListItem" >
+
+    <ImageView
+        android:id="@+id/groupitem_avatar_iv"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:background="#d5d5d5"
+        android:src="@drawable/group_head" />
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="8.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/SmallPadding"
+            android:layout_marginTop="-1.5dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <mobi.jzcx.android.chongmi.sdk.im.ui.EmojiconTextView
+                android:id="@+id/group_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:tag="name_tv"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/group_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.5dip"
+                android:ellipsize="end"
+                android:gravity="left|center"
+                android:tag="account"
+                android:text="account"
+                android:textColor="#ff888888"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/join_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已加入"
+        android:textColor="#ff00ff" />
+
+</LinearLayout>

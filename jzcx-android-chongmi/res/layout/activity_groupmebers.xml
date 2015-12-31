@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background_color" >
+
+    <include
+        android:id="@+id/GroupMebers_titlebar"
+        layout="@layout/comm_title_bar" />
+
+    <ListView
+        android:id="@+id/GroupMebers_List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GroupMebers_titlebar"
+        android:background="#ffffff"
+        android:cacheColorHint="@color/transparent"
+        android:divider="#d8d8d8"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/empty_GroupMebers_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/GroupMebers_titlebar"
+        android:background="@color/white"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="@string/main_empty_notice"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ResourceAsColor" severity="ignore">
+        <ignore path="src/mobi/jzcx/android/chinahome/ui/main/renovation/DetailsActivity.java" />
+    </issue>
+</lint>

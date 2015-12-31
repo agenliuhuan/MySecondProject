@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:id="@+id/news_commentRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="17.78%w"
+        android:background="@drawable/on_item_selected"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="13.33%w"
+            app:layout_marginLeftPercent="3.33%w"
+            app:layout_widthPercent="13.33%w"
+            android:src="@drawable/news_comment_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="20%w"
+            android:text="@string/news_pinglun_text"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/news_havecomment_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="20%w"
+            android:src="@drawable/setting_message_number" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d8d8d8" />
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:id="@+id/news_systemRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="17.78%w"
+        android:background="@drawable/on_item_selected"
+        android:baselineAligned="false" >
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="13.33%w"
+            app:layout_marginLeftPercent="3.33%w"
+            app:layout_widthPercent="13.33%w"
+            android:src="@drawable/news_system_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="20%w"
+            android:text="@string/news_system_text"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/news_havesystems_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="20%w"
+            android:src="@drawable/setting_message_number" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d8d8d8" />
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:id="@+id/news_myGroupRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="17.78%w"
+        android:background="@drawable/on_item_selected"
+        android:baselineAligned="false" >
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="13.33%w"
+            app:layout_marginLeftPercent="3.33%w"
+            app:layout_widthPercent="13.33%w"
+            android:src="@drawable/news_mygroup_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="20%w"
+            android:text="@string/news_group_text"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d8d8d8" />
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:id="@+id/news_requestRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="17.78%w"
+        android:background="@drawable/on_item_selected"
+        android:baselineAligned="false" >
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="13.33%w"
+            app:layout_marginLeftPercent="3.33%w"
+            app:layout_widthPercent="13.33%w"
+            android:src="@drawable/news_request_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="20%w"
+            android:text="@string/news_request_text"
+            android:textColor="#444444"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/news_haverequest_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="20%w"
+            android:src="@drawable/setting_message_number" />
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

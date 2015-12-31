@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <mobi.jzcx.android.core.percent.PercentRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="66.1%w" >
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/accountcenter_userimg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                app:layout_heightPercent="19.4%w"
+                app:layout_marginTopPercent="20.5%w"
+                app:layout_widthPercent="19.4%w"
+                fresco:placeholderImage="@drawable/avatar_default_image" />
+
+            <mobi.jzcx.android.core.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accountcenter_userimg"
+                app:layout_marginTopPercent="3.6%w"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/accountcenter_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/accountcenter_seximg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:layout_marginLeftPercent="1.08%w"
+                    android:src="@drawable/sex_lady" />
+            </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+            <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                app:layout_heightPercent="5%w"
+                app:layout_marginBottomPercent="3.3%w"
+                android:gravity="center" >
+
+                <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                    android:id="@+id/accountcenter_attentionRL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/accountcenter_attentiontv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account_center_attention"
+                        android:textColor="#e6e6e6"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/accountcenter_attention_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@id/accountcenter_attentiontv"
+                        android:text="0"
+                        android:textColor="#e6e6e6"
+                        android:textSize="13sp" />
+                </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+                <View
+                    android:id="@+id/line_view"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/accountcenter_attentionRL"
+                    app:layout_marginLeftPercent="5%w"
+                    android:background="#ffffff" />
+
+                <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                    android:id="@+id/accountcenter_fansRL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/line_view"
+                    app:layout_marginLeftPercent="5%w" >
+
+                    <TextView
+                        android:id="@+id/accountcenter_fanstv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account_center_fans"
+                        android:textColor="#e6e6e6"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/accountcenter_fansnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@id/accountcenter_fanstv"
+                        android:text="0"
+                        android:textColor="#e6e6e6"
+                        android:textSize="13sp" />
+                </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+            </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+    </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+</mobi.jzcx.android.core.percent.PercentRelativeLayout>

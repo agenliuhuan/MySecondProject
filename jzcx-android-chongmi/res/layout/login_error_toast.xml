@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.jzcx.android.core.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        app:layout_heightPercent="15%w"
+        app:layout_marginTopPercent="10%w"
+        android:layout_gravity="center_horizontal"
+        app:layout_widthPercent="80%w"
+        android:background="@drawable/login_psderror_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="10%w"
+            app:layout_widthPercent="10%w"
+            android:background="@drawable/login_psderror_img" />
+
+        <TextView
+            android:id="@+id/login_error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="4%w"
+            android:text="@string/login_error_tip"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</mobi.jzcx.android.core.percent.PercentLinearLayout>

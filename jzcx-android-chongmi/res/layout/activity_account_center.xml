@@ -1,0 +1,53 @@
+<mobi.jzcx.android.core.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent" >
+
+    <mobi.jzcx.android.core.view.pulltozoom.PullToZoomScrollViewEx
+        android:id="@+id/accountcenter_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/comm_activity_background_color" />
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:id="@+id/accountcenter_title_topll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/comm_title_color"
+        android:orientation="vertical" >
+
+        <mobi.jzcx.android.core.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_heightPercent="13%w" >
+
+            <mobi.jzcx.android.core.percent.PercentRelativeLayout
+                android:id="@+id/accountcenter_title_leftRL"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                app:layout_heightPercent="13%w"
+                app:layout_widthPercent="13%w" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_titlebar_left_normal" />
+            </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+
+            <TextView
+                android:id="@+id/accountcenter_title_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </mobi.jzcx.android.core.percent.PercentRelativeLayout>
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</mobi.jzcx.android.core.percent.PercentRelativeLayout>

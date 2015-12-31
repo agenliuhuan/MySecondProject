@@ -1,0 +1,598 @@
+<resources>
+
+    <string name="app_name">宠米</string>
+    <string name="default_unified_loading_text">请稍候&#8230;</string>
+    <string name="network_error_text">连接异常，请稍后重试</string>
+    <string name="psd_digits_text">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&#032;&#033;\&#034;&#035;&#036;&#037;&#038;\&#039;&#040;&#041;&#042;&#043;&#044;&#045;&#046;&#047;&#058;&#059;&#060;&#061;&#062;&#063;&#064;&#091;&#092;&#093;&#094;&#095;&#096;&#123;&#124;&#125;&#126;&#160;&#161;&#162;&#163;&#164;&#165;&#166;&#167;&#168;&#169;&#170;&#171;&#172;&#173;&#174;&#175;&#176;&#177;&#178;&#179;&#180;&#181;&#182;&#183;&#184;&#185;&#186;&#187;&#188;&#189;&#190;&#191;</string>
+    <string name="phone_digits_text">0123456789</string>
+    <string name="ren">人</string>
+    <string name="back_click_text">再按一次退出程序</string>
+    <string name="crash_text">很抱歉,程序出现异常,即将退出</string>
+
+    <!-- splash -->
+    <string name="splash_text1">用</string>
+    <string name="splash_text2">芯</string>
+    <string name="splash_text3">宠</string>
+    <string name="splash_text4">爱</string>
+    <string name="splash_text5">copyright©2015Chongmi.com</string>
+
+    <!-- 下拉listview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载…</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">上拉查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!-- 对话框按钮 -->
+    <string name="main_homepage">附近</string>
+    <string name="main_shopping">宠米</string>
+    <string name="main_news">消息</string>
+    <string name="main_mine">个人</string>
+    <string name="main_createvent">创建活动</string>
+    <string name="main_petdiary">写日记</string>
+
+    <!-- 附近 -->
+    <string name="dynamic">动态</string>
+    <string name="attention">关注</string>
+    <string name="attention_nodynamic">暂无好友动态</string>
+    <string name="dynamic_zan">赞</string>
+    <string name="active">活动</string>
+    <string name="active_search">搜索</string>
+    <string name="active_search_noresult">无搜索结果</string>
+    <string name="petcategory_search_noresult">无搜索结果</string>
+    <string name="active_people">您附近的活动</string>
+    <string name="active_numtext">活动人数:</string>
+
+    <!-- 分享页面 -->
+    <string name="share_to">分享到：</string>
+    <string name="share_to_wx">微信</string>
+    <string name="share_to_wxf">朋友圈</string>
+    <string name="share_to_wb">微博</string>
+    <string name="share_report">举报</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_fail">分享失败</string>
+
+    <!-- 标题栏 -->
+    <string name="title_next_tip">下一步</string>
+    <string name="title_next_skip">跳过</string>
+
+    <!-- 个人 -->
+    <string name="mine_attention">关注</string>
+    <string name="mine_attentioned">粉丝</string>
+    <string name="mine_mypet">我的宠物</string>
+    <string name="mine_setting">系统设置</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">设置</string>
+    <string name="setting_password">账号管理</string>
+    <string name="setting_exit">退出登录</string>
+    <string name="setting_clearcache">清理缓存</string>
+    <string name="setting_good">给个好评呗</string>
+    <string name="setting_feeback">意见反馈</string>
+    <string name="setting_version">版本更新</string>
+    <string name="setting_about">关于宠米</string>
+    <string name="logout_waitting_text">正在退出</string>
+
+    <!-- 账号管理 -->
+    <string name="settingaccount_title">账号管理</string>
+    <string name="settingaccount_password">修改密码</string>
+    <string name="settingaccount_phone">更换手机号</string>
+
+    <!-- 更换手机号 -->
+    <string name="changephone_title">更换手机号</string>
+    <string name="changephone_righttext">确定</string>
+    <string name="changephone_vcode">请输入6位验证码</string>
+    <string name="changephone_oldphone">当前手机号码为：</string>
+    <string name="changephone_newphone">请输入新手机号</string>
+
+    <!-- 登录 -->
+    <string name="login_title">用户登录</string>
+    <string name="login_namehint">请输入手机号码</string>
+    <string name="login_psdhint">请输入登录密码</string>
+    <string name="login_fogotpsd">忘记密码</string>
+    <string name="login_login">登录</string>
+    <string name="login_regist">注册账号</string>
+    <string name="login_thirdlogin">or</string>
+    <string name="login_error_tip">账号或密码输入错误</string>
+    <string name="login_waitting_text">正在登录</string>
+
+    <!-- 忘记密码 -->
+    <string name="fogot_title">重置密码</string>
+    <string name="fogot_title_righttv">完成</string>
+    <string name="fogot_tip1">密码重置成功</string>
+    <string name="fogot_edt_phone">输入注册手机号</string>
+    <string name="fogot_edt_psd">密码需由6~15个字符组成，区分大小写</string>
+    <string name="fogot_edt_check">输入验证码</string>
+    <string name="fogot_tv_resendcount">%02d秒后重发</string>
+
+    <!-- 注册 -->
+    <string name="registe_title">注册</string>
+    <string name="registe_title_righttext">下一步</string>
+    <string name="registe_edt_phone">请输入手机号码</string>
+    <string name="registe_edt_psd">请输入6-16位密码</string>
+    <string name="registe_edt_check">请输入6位短信验证码</string>
+    <string name="registe_tv_resendcount">%02d秒后重发</string>
+    <string name="registe_tv_resend">发送验证码</string>
+
+    <!-- 完善资料 -->
+    <string name="registeover_title">主人资料</string>
+    <string name="registeover_title_righttext">完成</string>
+    <string name="registeover_tip1">点击添加头像</string>
+    <string name="registeover_nickname">主人名称</string>
+    <string name="registeover_nicknamehint">设置名称</string>
+    <string name="registeover_choice">主人性别</string>
+    <string name="registeover_choiceman">男</string>
+    <string name="registeover_choicewoman">女</string>
+    <string name="registeover_birthday">主人生日</string>
+    <string name="registeover_image_tv_title">设置头像</string>
+    <string name="registeover_image_btn_snapshot">拍照</string>
+    <string name="registeover_image_btn_album">手机相册</string>
+    <string name="registeover_image_btn_cancel">取消</string>
+    <string name="registeover_submittip">正在创建资料 </string>
+
+    <!-- 注册添加宠物 -->
+    <string name="registeeditpet_title">添加宠物</string>
+    <string name="registeeditpet_tip1">点击添加宠物头像</string>
+    <string name="registeeditpet_nickname">宠物昵称</string>
+    <string name="registeeditpet_nicknamehint">设置宠物昵称</string>
+    <string name="registeeditpet_choice">宠物性别</string>
+    <string name="registeeditpet_choiceman">GG</string>
+    <string name="registeeditpet_choicewoman">MM</string>
+    <string name="registeeditpet_petstyle">宠物品种</string>
+    <string name="registeeditpet_petstyle_tip">选择宠物品种</string>
+    <string name="registeeditpet_birthday">宠物生日</string>
+    <string name="registeeditpet_birthday_select_tip">请选择</string>
+    <string name="registeeditpet_desc_tip">请填写宠物简介</string>
+    <string name="registeeditpet_intro">宠物简介</string>
+
+    <!-- 修改昵称性别 -->
+    <string name="nickname_ttb_title">修改昵称</string>
+    <string name="nickname_title_righttext">完成</string>
+    <string name="nickname_edittext">设置昵称</string>
+    <string name="sex_ttb_title">性   别</string>
+    <string name="sex_title_righttext">完成</string>
+    <string name="sex_man">男</string>
+    <string name="sex_woman">女</string>
+    <string name="desc_edittext">简介不能超过十位</string>
+
+    <!-- 反馈 -->
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_righttext">提交</string>
+    <string name="feedback_edithint">您的宝贵意见，是我们前进的动力~</string>
+    <string name="feedback_textnum">%s/500</string>
+    <string name="feedback_over_title">反馈成功</string>
+    <string name="feedback_over_righttv">完成</string>
+    <string name="feedback_over_text1">反馈成功</string>
+    <string name="feedback_over_text2">感谢您对宠米的关注与支持，我们会</string>
+    <string name="feedback_over_text3">认真处理您的反馈。</string>
+    <!-- 修改密码 -->
+    <string name="password_ttb_title">修改密码</string>
+    <string name="password_title_righttext">完成</string>
+    <string name="password_edt_old">请输入原始密码</string>
+    <string name="password_edt_new">请输入新密码</string>
+    <string name="password_tv_tip">密码最少6位，最多15位，区分大小写</string>
+
+    <!-- 个人中心 -->
+    <string name="mine_title">个人中心</string>
+    <string name="account_title">编辑个人资料</string>
+    <string name="account_avatar">头像</string>
+    <string name="account_nickname">昵称</string>
+    <string name="account_sex">性别</string>
+    <string name="account_birthday">生日</string>
+    <string name="account_receiving_address">收货地址</string>
+    <string name="account_btn_image_snapshot">拍照</string>
+    <string name="account_btn_image_album">手机相册</string>
+    <string name="account_btn_image_cancel">取消</string>
+    <string name="account_center_attention">关注</string>
+    <string name="account_center_fans">粉丝</string>
+    <string name="account_center_petnum">Ta的宠物</string>
+    <string name="account_center_mypetnum">我的宠物</string>
+    <string name="account_center_morepet">查看更多</string>
+    <string name="account_center_dynamic">Ta的动态</string>
+    <string name="account_center_mydynamic">我的动态</string>
+    <string name="account_center_message">私信</string>
+    <string name="account_center_attentioned">已关注</string>
+
+    <!-- 关注 -->
+    <string name="attention_ttb_title">关注</string>
+    <string name="attentioned_ttb_title">粉丝</string>
+
+    <!-- 动态 -->
+    <string name="dynamic_comment">评论</string>
+    <string name="dynamic_readed">浏览</string>
+    <string name="dynamic_share">分享</string>
+
+    <!-- 注册关注 -->
+    <string name="registe_attention_ttb_title">推荐关注</string>
+    <string name="registe_attention_refresh">换一批</string>
+    <string name="registe_attention_attention">关注</string>
+
+    <!-- 关于宠米 -->
+    <string name="about_ttb_title">关于宠米</string>
+
+    <!-- 我的宠物 -->
+    <string name="mypet_ttb_title">我的宠物</string>
+    <string name="editpet_title">编辑宠物资料</string>
+    <string name="editpet_righttext">删除</string>
+    <string name="add_pet">添加宠物</string>
+    <string name="petstyle_ttb_title">宠物种族</string>
+    <string name="petcategory_ttb_title">宠物品种</string>
+    <string name="petlist_title">宠物列表</string>
+
+    <!-- 添加宠物 -->
+    <string name="addpet_avatar">宠物头像</string>
+    <string name="addpet_nickname">添加昵称</string>
+    <string name="editpet_nickname">宠物昵称</string>
+    <string name="addpet_sex">宠物性别</string>
+    <string name="addpet_style">宠物品种</string>
+    <string name="addpet_birthday">宠物生日</string>
+    <string name="addpet_desc">宠物简介</string>
+    <string name="petdesc_title">宠物简介</string>
+    <string name="petdesc_edithint">请输入0-30个字符的简介</string>
+
+    <!-- 宠物日记 -->
+    <string name="petdiary_ttb_title">发布宠物日记</string>
+    <string name="petdiary_title_righttext">发布</string>
+    <string name="petdiary_edithint">说点它的新鲜事...</string>
+    <string name="petdiary_aboutpet">关联宠物</string>
+    <string name="petdiarydetail_title">详情</string>
+    <string name="petdiarydetail_commont">评论:</string>
+    <string name="petdiarydetail_comment_report">举报</string>
+    <string name="petdiarydetail_delete">删除</string>
+    <string name="petdiarydetail_hasdelete">该动态已被删除</string>
+    <string name="petdiaryimage_down">保存到手机</string>
+
+    <!-- 举报 -->
+    <string name="report_ttb_title">举报</string>
+    <string name="report_overttb_title">感谢举报</string>
+    <string name="report_ttb_righttv">提交</string>
+    <string name="report_overtv">完成</string>
+    <string name="report_overtv1">已提交</string>
+    <string name="report_overtv2">您的举报已提交，我们会尽快处理，</string>
+    <string name="report_overtv3">感谢你的支持。</string>
+    <string name="report_reason">选择举报原因</string>
+    <string name="report_item1">色情低俗</string>
+    <string name="report_item2">广告骚扰</string>
+    <string name="report_item3">谣言</string>
+    <string name="report_item4">政治敏感</string>
+    <string name="report_item5">违法</string>
+    <string name="report_other">其他</string>
+
+    <!-- 首页 -->
+    <string name="homepage_distance_text">km</string>
+    <string name="image_detail_title">查看图片</string>
+    <!-- 点赞 -->
+    <string name="zanlist_title">点赞</string>
+
+    <!-- 创建活动 -->
+    <string name="createevent_title">评论</string>
+    <string name="createevent_title_right">创建</string>
+    <string name="createevent_seticon">活动组头像</string>
+    <string name="createevent_titletext">活动标题</string>
+    <string name="createevent_titleedit">设置活动标题</string>
+    <string name="createevent_birthdayhint">请选择</string>
+    <string name="createevent_datetext">活动时间</string>
+    <string name="createevent_locationtext">活动地点</string>
+    <string name="createevent_mebernumtext">活动人数</string>
+    <string name="createevent_mebernumedit">输入活动人数</string>
+    <string name="createevent_desctext">活动介绍</string>
+    <string name="createevent_titlerighttext">保存</string>
+    <string name="createevent_locationedithint">设置活动地点</string>
+    <string name="createevent_locationnull">未搜索到您要找的地点哦</string>
+    <string name="createevent_titlehint">设置活动标题</string>
+    <string name="createevent_numberhint">2-30人</string>
+    <string name="joingroup_title">申请验证</string>
+    <string name="joingroup_title_righttext">提交</string>
+    <string name="joingroup_hinttext">请求加入\"%s\"活动组</string>
+    <string name="joingroup_edithint">请6-50个字符的申请理由</string>
+    <string name="groupmeber_title">活动成员</string>
+    <string name="mygroup_title">活动组消息</string>
+
+    <!-- 活动详情 -->
+    <string name="eventdetail_group">活动成员</string>
+    <string name="eventdetail_datetext">活动时间</string>
+    <string name="eventdetail_locationtext">活动地点</string>
+    <string name="eventdetail_mebernumtext">活动人数</string>
+    <string name="eventdetail_desctext">活动介绍</string>
+    <string name="eventdetail_createtimetext">创建时间</string>
+    <string name="eventdetail_joinevent">加入群组</string>
+    <string name="eventdetail_exitevent">退出群组</string>
+    <string name="eventdetail_dismissevent">解散群组</string>
+    <string name="eventdetail_reply">回复</string>
+
+    <!-- toast提示 -->
+    <string name="toast_notregiste_error">该用户不存在</string>
+    <string name="toast_loginpsd_error">密码输入错误</string>
+    <string name="toast_useravatar_notnull">还没有添加主人头像哦</string>
+    <string name="toast_usersex_notnull">还没有选择您的性别哦~</string>
+    <string name="toast_usernickname_notnull">还没有填写您的昵称哦</string>
+    <string name="toast_userbirthday_notnull">还没有选择您的生日哦~</string>
+    <string name="toast_password_max_error">密码应为6-16位</string>
+    <string name="toast_phone_notnull">请输入手机号码</string>
+    <string name="toast_password_notnull">请输入密码</string>
+    <string name="toast_phone_format_error">手机号码有误</string>
+    <string name="toast_password_min_error">密码应为6-16位</string>
+    <string name="toast_check_length_error">请输入验证码</string>
+    <string name="toast_nickname_max_error">主人昵称应为2-10位哦</string>
+    <string name="toast_nickname_format_error">主人昵称不能包含符号哦</string>
+    <string name="toast_petnickname_format_error">宠物昵称不能包含符号哦</string>
+    <string name="toast_password_modify_succeed">密码修改成功</string>
+    <string name="toast_phone_modify_succeed">手机号码修改成功</string>
+    <string name="toast_password_modify_filed">密码修改失败</string>
+    <string name="toast_eventicon_notnull">还没有添加活动组头像哦~</string>
+    <string name="toast_eventtitle_notnull">还没有填写活动标题哦</string>
+    <string name="toast_eventtitle_format_error">活动标题不能包含符号哦</string>
+    <string name="toast_eventtitle_max_error">标题应为2-8位哦</string>
+    <string name="toast_eventbegintime_notnull">还没有选择活动时间哦</string>
+    <string name="toast_eventadress_notnull">还没有填写活动地点哦</string>
+    <string name="toast_eventnum_notnull">还没有选择活动人数哦</string>
+    <string name="toast_eventdesc_notnull">还没有填写活动介绍哦</string>
+    <string name="eventdesc_hint">填写活动介绍</string>
+    <string name="toast_eventdesc_max_error">活动介绍字数应在10-100之间哦</string>
+    <string name="toast_comment_max_error">评论不能大于100位哦~</string>
+    <string name="toast_report_notnull">还没有举报原因哦~</string>
+    <string name="toast_joinreason_notnull">您还没有填写申请理由哦~</string>
+    <string name="toast_joinreason_max_error">申请理由字数应在6-50之间哦</string>
+    <string name="toast_joinreason_success">申请成功啦，请等待群主确认哦~</string>
+    <string name="toast_peticon_notnull">还没有添加宠物头像哦</string>
+    <string name="toast_petname_notnull">还没有填写宠物昵称哦</string>
+    <string name="toast_petname_lengtherror">宠物昵称应为2-10位哦</string>
+    <string name="toast_petsex_notnull">还没有选择宠物的性别哦</string>
+    <string name="toast_petstyle_notnull">还没有选择宠物的品种哦</string>
+    <string name="toast_petintro_notnull">宠物简介不能为空</string>
+    <string name="toast_petintro_max_error">宠物简介不能超过30位哦</string>
+    <string name="toast_petbirthday_notnull">还没有选择宠物生日哦</string>
+    <string name="toast_editpeticon_success">宠物头像修改成功</string>
+    <string name="toast_editpeticon_failed">宠物头像修改失败</string>
+    <string name="toast_editpetname_success">宠物昵称修改成功</string>
+    <string name="toast_editpetname_failed">宠物昵称修改失败</string>
+    <string name="toast_editpetsex_success">宠物性别修改成功</string>
+    <string name="toast_editpetdesc_max_error">宠物简介不能超过50位</string>
+    <string name="toast_editpetsex_failed">宠物性别修改失败</string>
+    <string name="toast_editpetdesc_success">宠物简介修改成功</string>
+    <string name="toast_delpet_success">宠物删除成功</string>
+    <string name="toast_delpet_failed">宠物删除失败</string>
+    <string name="toast_petdiary_max_error">文字内容不能超过200位哦~</string>
+    <string name="toast_editanum_error">活动人数2-30人</string>
+    <string name="toast_addcomment_success">评论成功</string>
+    <string name="toast_replycomment_success">回复成功</string>
+    <string name="toast_addcomment_failed">评论失败</string>
+    <string name="toast_delcomment_success">评论删除成功</string>
+    <string name="toast_updateavatar_success">头像上传成功啦</string>
+    <string name="toast_updateavatar_ing">正在上传头像</string>
+    <string name="toast_success">修改成功</string>
+    <string name="toast_createevent_success">活动创建成功</string>
+    <string name="toast_petdiarty_pet">请添加宠物</string>
+    <string name="toast_petdiarty_images">还没有添加要上传的照片哦</string>
+    <string name="toast_petdiarty_text">请添加描述</string>
+    <string name="toast_reportnull_text">请添加原因</string>
+    <string name="toast_microblogremove_success">宠物日记删除成功</string>
+    <string name="toast_eventdateafter_text">您可以创建30天内的活动哦</string>
+    <string name="toast_datebefore_text">最早可创建明天的活动哦</string>
+    <string name="toast_dateafter_text">请选择正确的生日日期哦</string>
+    <string name="toast_noselectattention_text">还没有选择要关注的用户哦~</string>
+    <string name="toast_clearover_text">缓存清除成功啦</string>
+    <string name="toast_feedback_notnull">主人，说点什么吧~</string>
+    <string name="toast_feedback_fammter_error">反馈内容字数应在10-500之间</string>
+    <string name="toast_vcodesend_success">验证码已发送</string>
+    <string name="toast_imagedown_success">图片已保存至</string>
+    <string name="toast_changepsd_oldpsdnull">请输入原始密码</string>
+    <string name="toast_changepsd_newpsdnull">请输入新密码</string>
+    <string name="toast_answer_success">回答成功</string>
+    <string name="toast_addquestion_notnull">请输入您要提问的问题</string>
+    <string name="toast_addquestion_success">您的问题已提交，请等待审核</string>
+    <string name="toast_bluetooth_enable">您的设备不支持蓝牙4.0</string>
+    <string name="toast_chattext_max_error">最多只能输入1000字哦~</string>
+
+    <!-- 宠米 -->
+    <string name="shop_ttb_title">宠米</string>
+    <string name="hardware_title">智能狗狗项圈</string>
+    <string name="hardware_update">数据同步：</string>
+    <string name="hardware_petlist_title">设备管理</string>
+    <string name="hardware_petlist_textview">未绑定设备的宠物</string>
+    <string name="hardware_petlist_unbind">解绑设备</string>
+    <string name="hardware_petlist_bind">绑定设备</string>
+    <string name="hardware_petlist_bindll">创建宠物并绑定设备</string>
+
+    <!-- 绑定项圈 -->
+    <string name="hardware_startbind_title">智能狗狗项圈</string>
+    <string name="hardware_startbind_text1">p2  或     p1</string>
+    <string name="hardware_startbind_text2">绑定宠米智能狗狗项圈后可以详细了解宠物</string>
+    <string name="hardware_startbind_text3">活动状况，喂食建议等指数</string>
+    <string name="hardware_startbind_bindbtn">立即绑定</string>
+
+    <!-- 搜索项圈 -->
+    <string name="hardware_scanbluetooth_title">搜索宠米项圈</string>
+    <string name="hardware_scanbluetooth_text">正在搜索附近的设备...</string>
+    <string name="hardware_scanbluetooth_scanovertext">搜索到的设备</string>
+    <string name="ble_not_supported">不支持蓝牙</string>
+    <string name="unknown_device">未知设备</string>
+    <string name="device_isbind">已被%s绑定</string>
+    <string name="device_unbind">未绑定</string>
+    <string name="device_bindsuccess">绑定成功</string>
+    <string name="petstepsnum_righttext">设备</string>
+    <string name="petstepsnum_today">今天</string>
+    <string name="petstepsnum_weektrend">查看周趋势</string>
+    <string name="petstepsnum_steps">步数</string>
+    <string name="petstepsnum_updatescaning">搜索设备中</string>
+    <string name="petstepsnum_updatenohardware">未搜索到设备</string>
+    <string name="petstepsnum_updateing">数据同步中</string>
+    <string name="petstepsnum_cancel">取消</string>
+    <string name="calendar_lefttext">返回</string>
+    <string name="petstepsnum_notupdatetext">今天还没有同步过哦</string>
+    <string name="weektrend_daysteps">每日平均步数</string>
+    <string name="weektrend_weekstep">总距离：公里</string>
+    <string name="weektrend_week1">周一</string>
+    <string name="weektrend_week2">周二</string>
+    <string name="weektrend_week3">周三</string>
+    <string name="weektrend_week4">周四</string>
+    <string name="weektrend_week5">周五</string>
+    <string name="weektrend_week6">周六</string>
+    <string name="weektrend_week7">周日</string>
+
+    <!-- 宠米问问 -->
+    <string name="main_answertv">宠米问问</string>
+    <string name="main_answertext">互动式知识问答分享平台</string>
+
+    <!-- 问问详情 -->
+    <string name="main_questiondetail">问问详情</string>
+    <string name="main_questionofficial_name">宠米金波医生</string>
+    <string name="questionofficial_hasmore">&#160;&#160;&#160;查看更多</string>
+    <string name="officialdoctor_title">详情</string>
+    <string name="questionofficial_content_title">医生介绍</string>
+    <string name="questionofficial_content_text">宠米御用医生，基础兽医学博士，毕业于吉林大学，多年从事兽医行业，参与动物医学领域医疗、科研工作。曾在吉林、广州多家知名宠物医院担任主治医师，擅长各种营养代谢疾病、老年病，尤其对糖尿病、肾衰、脂肪肝、肿瘤疾病有自己独到见解。</string>
+    <string name="main_questionofficial_edithint">我也来解答下</string>
+
+    <!-- 回答详情 -->
+    <string name="answerdetail_title">详情</string>
+
+    <!-- 提问 -->
+    <string name="addquestion_title_righttext">提交</string>
+    <string name="addquestion_title">描述你的问题</string>
+    <string name="addquestion_title_hint">请在这里阐述你的问题</string>
+    <string name="addquestion_title_length">%s/50</string>
+    <string name="addquestion_content1">问题描述</string>
+    <string name="addquestion_content2">(选填)</string>
+    <string name="addquestion_content_hint">你可以在这里继续补充问题细节</string>
+    <string name="addquestion_content_length">%s/500</string>
+
+    <!-- 消息 -->
+    <string name="news_ttb_title">消息</string>
+    <string name="news_pinglun_text">评论</string>
+    <string name="news_system_text">系统消息</string>
+    <string name="news_group_text">活动组消息</string>
+    <string name="news_request_text">活动申请</string>
+    <string name="news_delitem_text">删除</string>
+    <string name="msg_delete_success">删除成功</string>
+    <string name="msg_clear_success">清空成功</string>
+    <string name="conv_msg_sending">正在发送中</string>
+
+    <!-- 评论 -->
+    <string name="comment_title">评论</string>
+    <string name="comment_clear">清空</string>
+    <string name="comment_back">回复</string>
+    <string name="comment_isvoice">[语音]</string>
+
+    <!-- 申请群组 -->
+    <string name="grouprequest_title">详细资料</string>
+    <string name="grouprequest_reason">申请理由</string>
+    <string name="grouprequest_account">个人主页</string>
+    <string name="grouprequest_pet">TA的宠物</string>
+    <string name="grouprequest_accept">通过验证</string>
+    <string name="grouprequestlist_title">活动申请</string>
+    <string name="grouprequestlist_accepted">已接受</string>
+    <string name="grouprequestlist_isend">已过期</string>
+
+    <!-- 系统消息 -->
+    <string name="sysnews_title">系统消息</string>
+    <string name="sui">岁</string>
+    <string name="ge">个</string>
+    <string name="yue">月</string>
+    <string name="zhou">周</string>
+    <string name="tian">天</string>
+    <string name="sysnewsdetail_title">系统中心</string>
+    <string name="minite">分钟前</string>
+    <string name="hour">小时前</string>
+    <string name="yestearday">昨天</string>
+
+    <!-- dialog -->
+    <string name="btn_confirm">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_close">关闭</string>
+    <string name="dialog_title_tip">提示</string>
+    <string name="dialog_btn_confim">确认</string>
+    <string name="dialog_btn_cancel">取消</string>
+    <string name="dialog_title_alert">提示</string>
+    <string name="clearcache_content">主人，是否清除所有图片缓存？</string>
+    <string name="clearnews_content">清空所有消息</string>
+    <string name="logout_content">确认退出登录？</string>
+    <string name="dismiss_content">确定解散该活动组吗？</string>
+    <string name="exit_content">确定退出该活动组吗？</string>
+    <string name="petcenter_nointro">主人还没有介绍我哦~</string>
+    <string name="petcenter_emptytv">主人还没有上传我的宠物日记哦~</string>
+    <string name="accountpetcenter_petemptytv">主人有点懒，什么都没有留下~</string>
+    <string name="accountpetcenter_emptytv">还没有上传任何宠物日记哦~</string>
+    <string name="attention_emptytv">还没有关注其他人哦~</string>
+    <string name="fans_emptytv">还没有粉丝关注哦~</string>
+    <string name="dialog_suspend_text">您的账号已被管理员冻结，如需帮助请拨打客服电话</string>
+    <string name="dialog_suspend_phone">400-800-8888</string>
+    <string name="notupdateDetail_content">还没有填写主人资料哦～马上去完善</string>
+    <string name="notPetDetail_content">还没有添加宠物哦～马上去添加</string>
+    <string name="dialog_relogin">您的账号已在其他设备登录啦~</string>
+    <string name="dialog_relogin_ok">重新登录</string>
+
+    <!-- 友盟统计 -->
+    <string name="umeng_feedback_1">动态</string>
+    <string name="umeng_feedback_2">关注</string>
+    <string name="umeng_feedback_3">活动</string>
+    <string name="umeng_feedback_4">活动详情</string>
+    <string name="umeng_feedback_5">问问</string>
+    <string name="umeng_feedback_6">问问详情</string>
+    <string name="umeng_feedback_7">消息</string>
+    <string name="umeng_feedback_8">个人主页</string>
+    <string name="umeng_feedback_9">宠物主页</string>
+    <string name="umeng_feedback_10">私信</string>
+    <string name="umeng_feedback_11">项圈</string>
+    <string name="umeng_feedback_12">动态详情</string>
+
+    <!-- IM -->
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice_prefix">[语音]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="dynamic_expression">[动态表情]</string>
+    <string name="Invite_you_to_join_a_group_chat">邀请你加入了群聊</string>
+    <string name="Agreed_to_your_group_chat_application">同意了你的群聊申请</string>
+    <string name="receive_the_passthrough">收到透传：action：</string>
+    <string name="notification_fmt_one_txttype">%s发来1条消息</string>
+    <string name="notification_fmt_one_imgtype">%s发来1张图片</string>
+    <string name="notification_fmt_one_voicetype">%s发来1段语音</string>
+    <string name="notification_fmt_one_filetype">%s发来1个文件</string>
+    <string name="str_system_message_group_notice">群组通知</string>
+    <string name="app_pic">[图片]</string>
+    <string name="app_music">[音乐]</string>
+    <string name="app_voice">[语音]</string>
+    <string name="app_video">[视频]</string>
+    <string name="app_file">[文件]</string>
+    <string name="media_ejected">储存卡已拔出，语音功能将暂时不可用</string>
+    <string name="media_no_memory">储存卡存储空间不足</string>
+    <string name="invite_wating_replay">邀请成功，等待对方确认</string>
+    <string name="chatfooter_releasetofinish">松开 结束</string>
+    <string name="chatfooter_presstorcd">按住 说话</string>
+    <string name="chatfooter_cancel_rcd">手指上滑，取消发送</string>
+    <string name="chatfooter_cancel_rcd_release">松开手指，取消发送</string>
+    <string name="chatfooter_too_short">说话时间太短</string>
+    <string name="chat_footer_switch_mode_btn">语音说话与键盘输入切换</string>
+    <string name="app_panel_pic">图片</string>
+    <string name="app_panel_tackpic">拍照</string>
+    <string name="app_panel_file">文件</string>
+    <string name="chat_footer_smiley_btn">表情</string>
+    <string name="chat_footer_app_btn">更多</string>
+    <string name="chatting_send">发送</string>
+    <string name="chat_footer_switch_mode_voice_btn">切换到按住说话</string>
+    <string name="chat_footer_switch_mode_keybord_btn">切换到键盘</string>
+    <string name="avatar_desc">头像</string>
+    <string name="fmt_time_length">%d\"</string>
+    <string name="sendmsg_error_15032">您已经被禁言</string>
+    <string name="sendmsg_error_16072">您已不属于此群组成员</string>
+    <string name="sendmsg_error_170001">您发送的文本超过最大长度限制</string>
+    <string name="app_copy_ok">已复制</string>
+    <string name="plugin_upload_attach_size_tip">文件大小为：%s，确定要上传为附件吗？</string>
+    <string name="app_tip">提示</string>
+    <string name="chatting_empty_message_cant_be_sent">不能发送空白消息</string>
+    <string name="chatting_resend_title">重发</string>
+    <string name="chatting_resend_content">确认重发该消息？</string>
+    <string name="menu_del">删除</string>
+    <string name="app_delete_tips">确认删除？</string>
+    <string name="main_empty_notice">还没有参加任何活动群组哦</string>
+    <string name="main_empty_comment">还没有任何评论哦~</string>
+    <string name="main_empty_requestlist">还没有收到消息哦~</string>
+    <string name="main_empty_systemnews">还没有收到消息哦~</string>
+    <string name="str_group_id_fmt" formatted="false">群组id:%s</string>
+    <string name="message_newmask_text">新消息到达,点击查看</string>
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- OutlineContainer -->
+    <color name="holo_blue">#FF33E5B5</color>
+
+    <!-- 通用颜色值 -->
+    <color name="comm_green">#05b031</color>
+    <color name="comm_black">#333333</color>
+    <color name="comm_black_gray">#818181</color>
+    <color name="comm_gray">#b9b9b9</color>
+    <color name="comm_activity_background_color">#f4f4f4</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="blue">#009</color>
+    <color name="launcher_tab_tv_normal">#878787</color>
+    <color name="launcher_tab_tv_select">#37ab14</color>
+    <color name="comm_title_color">#ff6600</color>
+    <!-- 标题颜色 -->
+    <color name="comm_interaction_bg_color">#eeeeee</color>
+    <!-- 点赞背景颜色 -->
+    <color name="comm_text_gray_color">#999999</color>
+    <!-- 灰色字体 -->
+    <color name="comm_text_gray2_color">#c9c9c9</color>
+    <!-- 灰色字体 -->
+    <color name="comm_text_gray3_color">#8d8d8d</color>
+    <!-- 灰色字体 -->
+    <color name="comm_text_gray4_color">#e6e6e6</color>
+    <!-- 灰色字体 -->
+    <color name="comm_line_gray_color">#d8d8d8</color>
+    <!-- 灰色线 -->
+    <color name="comm_text_black_color">#444444</color>
+    <!-- 黑色字 -->
+    <color name="comm_bg_white_color">#f4f4f4</color>
+    <!-- 白色背景 -->
+    <color name="comm_text_blue_color">#286eb3</color>
+    <!-- 蓝色字 -->
+
+
+    <!-- dialog -->
+    <color name="dialog_bg_color">#ffffff</color>
+    <color name="dialog_background_color">#F5F5F5</color>
+    <color name="dialog_background_hover_color">#b9b9b9</color>
+    <color name="dialog_border_color">#ff6b5c</color>
+    <color name="dialog_title_color">#ff6b5c</color>
+    <color name="dialog_content_color">#6f6f6f</color>
+    <color name="dialog_btn_color">#999999</color>
+    <color name="dialog_btnpress_color">#ff6600</color>
+    <color name="dialog_background">#fffbf6f2</color>
+    <color name="dialog_btn_press">#ffece5df</color>
+    <color name="dialog_divider">#ffe8e0da</color>
+    <color name="dialog_btn_normal">#fffbf6f2</color>
+    <color name="startbind_bgcolor">#fda93f</color>
+    <color name="official_bg">#fff8eb</color>
+    <color name="official_stroke">#ff6600</color>
+
+    <!-- 通用黑色半透明背景 -->
+    <color name="comm_black_transparent_background">#70000000</color>
+
+    <!-- 列表项选中色 -->
+    <color name="listitem_press_color">#E8E8E8</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="Grey">#BEBEBE</color>
+    <!-- 附近模块颜色值 -->
+    <color name="pet_type_color">#3fd3a0</color>
+    <!-- 删除背景色 -->
+    <color name="newdelitem_bg">#ff3c3c</color>
+    <color name="newdelitem_pressedbg">#d8d8d8</color>
+    <color name="chatroom_user_displayname_color">#5c574f</color>
+    <color name="chatroom_time_color">#7e7e7e</color>
+    <color name="text_content">#ffa19d94</color>
+    <color name="dialog_item_press">#ffece5df</color>
+    <color name="list_devider_color">#fff2f2f2</color>
+    <color name="grid_bg">#FFFFFFFF</color>
+    <color name="grid_border">#FFC6C6C6</color>
+
+</resources>

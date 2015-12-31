@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_activity_background_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/feedback_titlebar"
+        layout="@layout/comm_title_bar" />
+
+    <mobi.jzcx.android.core.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/feedback_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="70%w"
+            app:layout_marginLeftPercent="5%w"
+            app:layout_marginRightPercent="5%w"
+            app:layout_marginTopPercent="5%w"
+            android:background="@color/transparent"
+            android:gravity="top|left"
+            android:hint="@string/feedback_edithint"
+            android:maxLength="500"
+            android:textColor="#6f6f6f"
+            android:textColorHint="#888888"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/feedback_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginRightPercent="3.33%w"
+            app:layout_marginTopPercent="2.5%w"
+            android:gravity="right"
+            android:text="@string/feedback_textnum"
+            android:textColor="#6f6f6f"
+            android:textSize="17sp" />
+    </mobi.jzcx.android.core.percent.PercentLinearLayout>
+
+</LinearLayout>
